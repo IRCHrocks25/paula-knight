@@ -76,16 +76,19 @@
   .nav-cta{display:none;}
   .nav-cta .btn{min-height:44px;padding:.6rem 1.4rem;width:auto;font-size:.68rem;letter-spacing:.22em;}
   @media(min-width:1024px){.nav-links{display:flex;}.nav-cta{display:block;}}
+  @media(max-width:1023px){.brand{order:-1;}.hamburger{order:2;}}
   .hamburger{background:none;border:0;width:48px;height:48px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;cursor:pointer;padding:0;z-index:60;color:inherit;}
   .hamburger span{display:block;width:26px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s;}
   .hamburger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
   .hamburger.is-open span:nth-child(2){opacity:0;}
   .hamburger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);}
   @media(min-width:1024px){.hamburger{display:none;}}
-  .mobile-menu{position:fixed;inset:0;background:var(--plum);color:var(--parchment);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.2rem;opacity:0;pointer-events:none;transition:opacity .3s;z-index:50;padding:var(--gutter);overflow-y:auto;}
+  .mobile-menu{position:fixed;inset:0;background:var(--plum);color:var(--parchment);display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:1rem;opacity:0;pointer-events:none;transition:opacity .3s;z-index:50;padding:clamp(4.5rem,20vw,5.5rem) var(--gutter) var(--gutter);overflow-y:auto;}
   .mobile-menu.open{opacity:1;pointer-events:auto;}
   .mobile-menu a{font-family:var(--serif);font-size:1.7rem;padding:.4rem 1rem;}
-  .mobile-menu .btn{margin-top:1.2rem;max-width:340px;}
+  .mobile-menu .btn{margin-top:1.2rem;max-width:340px;font-size:.64rem;letter-spacing:.14em;padding:.95rem 1.6rem;white-space:nowrap;}
+  .mobile-menu-close{position:absolute;top:1.3rem;right:var(--gutter);width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:1px solid rgba(245,240,232,.35);border-radius:50%;color:var(--parchment);font-size:1.4rem;line-height:1;cursor:pointer;padding:0;z-index:2;}
+  .mobile-menu-close:hover{background:rgba(245,240,232,.12);}
 
   /* ── HERO SHELL (founder-style, light bg — needs solid dark nav) ── */
   .hero-shell{background:var(--parchment);position:relative;}
@@ -108,6 +111,10 @@
   .hero h1 em{font-weight:500;font-style:normal;color:#F5F0E8;}
   .hero .sub{margin:1.6rem 0 1.3rem;font-size:clamp(1rem,1.7vw,1.15rem);line-height:1.75;color:#F5F0E8;font-weight:400;max-width:620px;}
   .hero .btn-row{justify-content:flex-start;}
+  @media(max-width:640px){
+    .hero{min-height:auto;}
+    .hero-inner{align-items:flex-start;padding-top:clamp(6.5rem,30vw,7.5rem);padding-bottom:2.4rem;}
+  }
 
   /* ── CREDENTIAL STRIP (single row, no wrap) ── */
   .creds-strip{background:#F5F0E8;border-bottom:1px solid var(--line);}
@@ -439,6 +446,7 @@
 </div>
 
 <div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
   <a href="#method">The Method</a>
   <a href="#services">Services</a>
   <a href="#stories">Client Stories</a>
@@ -1049,6 +1057,7 @@
 (function(){
   var burger = document.getElementById('hamburger');
   var menu = document.getElementById('mobileMenu');
+  var closeBtn = document.getElementById('mobileMenuClose');
   function setOpen(open){
     menu.classList.toggle('open', open);
     burger.classList.toggle('is-open', open);
@@ -1057,6 +1066,7 @@
     document.body.classList.toggle('menu-open', open);
   }
   burger.addEventListener('click', function(){ setOpen(!menu.classList.contains('open')); });
+  if(closeBtn) closeBtn.addEventListener('click', function(){ setOpen(false); });
   menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setOpen(false); }); });
   document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
   menu.addEventListener('click', function(e){ if(e.target === menu) setOpen(false); });
