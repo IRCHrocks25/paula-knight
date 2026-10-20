@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Longevity Journey Coaching</title>
+<meta name="description" content="How Longevity Journey Coaching (PDD INNOVATIONS LLC) collects, uses, shares, and protects your personal information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#1C3A10;
+    --garnet:#7B2142;
+    --wine:#5C1A35;
+    --gold:#C9933A;
+    --terracotta:#C4622D;
+    --parchment:#F5F0E8;
+    --sage:#3D6B20;
+    --plum:#2C1020;
+    --parchment-2:#F5F0E8;
+    --ink:#1C3A10;
+    --ink-soft:#1C3A10;
+    --line:rgba(28,58,16,.16);
+    --line-light:rgba(245,240,232,.18);
+    --serif:'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+    --sans:'Manrope', system-ui, Helvetica, Arial, sans-serif;
+    --gutter:clamp(1.25rem, 5vw, 4.5rem);
+    --max:1240px;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--parchment);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16.5px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-wrap:break-word;}
+  em,i,cite,blockquote,q{font-style:normal;}
+  img,svg,video{max-width:100%;height:auto;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0;letter-spacing:-.005em;}
+  h1 em,h2 em,h3 em,h4 em{font-weight:500;font-style:normal;}
+  p{margin:0 0 1.1em;}
+  .wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter);}
+  .wrap-tight{max-width:960px;margin-inline:auto;padding-inline:var(--gutter);}
+
+  /* all-caps micro label */
+  .kicker{font-family:var(--sans);font-size:.7rem;letter-spacing:.36em;text-transform:uppercase;color:var(--garnet);font-weight:600;margin-bottom:1.2rem;display:block;}
+  .kicker.on-dark{color:var(--gold);}
+
+  /* ── BUTTONS ── */
+  .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:normal;line-height:1.35;min-height:52px;padding:1rem 2.4rem;font-family:var(--sans);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;border:1px solid var(--forest);color:var(--forest);background:transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s;width:100%;}
+  .btn:hover{background:var(--forest);color:var(--parchment);}
+  .btn.solid{background:var(--terracotta);border-color:var(--terracotta);color:#F5F0E8;}
+  .btn.solid:hover{background:var(--garnet);border-color:var(--garnet);color:#F5F0E8;}
+  .btn.light{border-color:rgba(245,240,232,.9);color:#F5F0E8;}
+  .btn.light:hover{background:#F5F0E8;color:var(--forest);}
+  .btn.light-solid{background:var(--terracotta);border-color:var(--terracotta);color:#F5F0E8;}
+  .btn.light-solid:hover{background:var(--gold);border-color:var(--gold);color:var(--plum);}
+  @media(min-width:640px){.btn{width:auto;}}
+  .btn-row{display:flex;flex-direction:column;gap:.9rem;align-items:stretch;}
+  @media(min-width:640px){.btn-row{flex-direction:row;align-items:center;flex-wrap:wrap;}}
+
+  /* ── TOPBAR (announcement strip above nav) ── */
+  .topbar{background:var(--plum);color:rgba(245,240,232,.92);border-bottom:1px solid rgba(201,147,58,.4);font-family:var(--sans);font-size:.72rem;letter-spacing:.06em;line-height:1.55;text-align:center;padding:.7rem clamp(1rem,4vw,2rem);}
+  .topbar em{font-style:normal;color:var(--gold);font-weight:600;letter-spacing:.05em;}
+  .topbar .sep{color:var(--gold);opacity:.55;margin:0 .55em;}
+  @media(max-width:640px){.topbar{font-size:.68rem;letter-spacing:.02em;line-height:1.5;text-align:center;padding:.65rem 1rem;}}
+
+  /* ── NAV ── */
+  header.site{position:absolute;inset:0 0 auto 0;z-index:40;color:#F5F0E8;}
+  .nav-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.4rem var(--gutter);}
+  .brand{font-family:var(--serif);font-size:1.35rem;letter-spacing:.28em;text-transform:uppercase;font-weight:500;display:flex;align-items:center;gap:.7rem;line-height:1.1;min-width:0;min-height:44px;color:#F5F0E8;}
+  .brand-logo{height:77px;width:auto;display:block;}
+  @media(min-width:640px){.brand-logo{height:96px;}}
+  .brand .mark{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.1;flex:none;}
+  .nav-links{display:none;gap:2.4rem;font-family:var(--sans);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:600;}
+  .nav-links a{padding:.6rem 0;border-bottom:1px solid transparent;min-height:44px;display:inline-flex;align-items:center;}
+  .nav-links a:hover{border-color:currentColor;}
+  .nav-cta{display:none;}
+  .nav-cta .btn{min-height:44px;padding:.6rem 1.4rem;width:auto;font-size:.68rem;letter-spacing:.22em;}
+  @media(min-width:1024px){.nav-links{display:flex;}.nav-cta{display:block;}}
+  @media(max-width:1023px){.brand{order:-1;}.hamburger{order:2;}}
+  .hamburger{background:none;border:0;width:48px;height:48px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;cursor:pointer;padding:0;z-index:60;color:inherit;}
+  .hamburger span{display:block;width:26px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s;}
+  .hamburger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
+  .hamburger.is-open span:nth-child(2){opacity:0;}
+  .hamburger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);}
+  @media(min-width:1024px){.hamburger{display:none;}}
+  .mobile-menu{position:fixed;inset:0;background:var(--plum);color:var(--parchment);display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:1rem;opacity:0;pointer-events:none;transition:opacity .3s;z-index:50;padding:clamp(4.5rem,20vw,5.5rem) var(--gutter) var(--gutter);overflow-y:auto;}
+  .mobile-menu.open{opacity:1;pointer-events:auto;}
+  .mobile-menu a{font-family:var(--serif);font-size:1.7rem;padding:.4rem 1rem;}
+  .mobile-menu .btn{margin-top:1.2rem;max-width:340px;font-size:.64rem;letter-spacing:.14em;padding:.95rem 1.6rem;white-space:nowrap;}
+  .mobile-menu-close{position:absolute;top:1.3rem;right:var(--gutter);width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:1px solid rgba(245,240,232,.35);border-radius:50%;color:var(--parchment);font-size:1.4rem;line-height:1;cursor:pointer;padding:0;z-index:2;}
+  .mobile-menu-close:hover{background:rgba(245,240,232,.12);}
+
+  /* ── HERO SHELL (founder-style, light bg — needs solid dark nav) ── */
+  .hero-shell{background:var(--parchment);position:relative;}
+  header.site--solid{position:relative;inset:auto;background:var(--forest);color:#F5F0E8;}
+  header.site--solid .brand{color:#F5F0E8;}
+  header.site--solid .nav-links a{color:rgba(245,240,232,.92);}
+  header.site--solid .nav-cta .btn{border-color:var(--terracotta);}
+
+  /* ── FOOTER ── */
+  footer{background:var(--plum);color:var(--parchment);padding:clamp(3.5rem,7vw,5.5rem) 0 2.4rem;text-align:center;}
+  .foot-mark{margin-bottom:1.4rem;display:inline-flex;flex-direction:column;align-items:center;gap:.9rem;}
+  .foot-logo{height:132px;width:auto;display:block;}
+  .foot-mark svg{width:38px;height:38px;stroke:var(--gold);fill:none;stroke-width:1.1;}
+  .foot-brand-name{font-family:var(--serif);font-size:1.1rem;letter-spacing:.32em;text-transform:uppercase;font-weight:500;color:var(--parchment);}
+  .foot-tag{font-family:var(--serif);font-size:clamp(1.2rem,2.6vw,1.55rem);color:var(--gold);max-width:680px;margin:1rem auto 2.4rem;line-height:1.5;}
+  .foot-cols{display:grid;grid-template-columns:1fr;gap:2rem;text-align:left;border-top:1px solid var(--line-light);padding-top:2.6rem;max-width:960px;margin-inline:auto;}
+  @media(min-width:640px){.foot-cols{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:900px){.foot-cols{grid-template-columns:repeat(4,1fr);text-align:left;}}
+  .foot-col{min-width:0;}
+  .foot-col h4{font-family:var(--sans);font-size:.64rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:600;}
+  .foot-col a,.foot-col span{display:block;padding:.55rem 0;font-size:.9rem;color:rgba(245,240,232,.85);min-height:44px;line-height:1.4;}
+  .foot-col a:hover{color:#F5F0E8;}
+  .foot-legal{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--line-light);font-size:.78rem;color:rgba(245,240,232,.6);display:flex;flex-direction:column;gap:.6rem;align-items:center;justify-content:center;text-align:center;}
+  .foot-legal a{margin:0 .8rem;}
+
+  body.menu-open{overflow:hidden;}
+
+  /* ── LEGAL PAGES ── */
+  .legal-hero{background:var(--forest);color:var(--parchment);padding:clamp(2.5rem,6vw,4.5rem) 0 clamp(3rem,7vw,5rem);border-bottom:1px solid rgba(201,147,58,.35);}
+  .legal-hero .kicker{color:var(--gold);}
+  .legal-hero h1{font-size:clamp(2rem,4.6vw,3.4rem);color:var(--parchment);max-width:900px;}
+  .legal-meta{margin-top:1.4rem;font-size:.9rem;color:rgba(245,240,232,.82);letter-spacing:.02em;}
+  .legal-meta strong{color:var(--gold);font-weight:600;}
+  .legal-switch{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem;}
+  .legal-switch a{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;padding:.7rem 1.2rem;border:1px solid rgba(245,240,232,.4);min-height:44px;display:inline-flex;align-items:center;}
+  .legal-switch a[aria-current="page"]{background:var(--terracotta);border-color:var(--terracotta);}
+  .legal-switch a:not([aria-current]):hover{background:rgba(245,240,232,.1);}
+
+  .legal-layout{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4.5rem);padding-block:clamp(3rem,7vw,5.5rem);}
+  @media(min-width:1024px){.legal-layout{grid-template-columns:260px minmax(0,1fr);}}
+
+  .legal-toc{font-size:.86rem;line-height:1.45;}
+  .legal-toc details{border:1px solid var(--line);background:#FBF8F2;}
+  .legal-toc summary{cursor:pointer;list-style:none;padding:1rem 1.2rem;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--garnet);display:flex;justify-content:space-between;align-items:center;min-height:44px;}
+  .legal-toc summary::-webkit-details-marker{display:none;}
+  .legal-toc summary::after{content:"+";font-size:1.1rem;letter-spacing:0;color:var(--forest);}
+  .legal-toc details[open] summary::after{content:"\2013";}
+  .legal-toc ol{list-style:none;margin:0;padding:0 1.2rem 1rem;}
+  .legal-toc li a{display:block;padding:.45rem 0;color:var(--forest);opacity:.78;border-left:2px solid transparent;padding-left:.7rem;margin-left:-.7rem;}
+  .legal-toc li a:hover,.legal-toc li a.active{opacity:1;border-left-color:var(--terracotta);}
+  @media(min-width:1024px){
+    .legal-toc{position:sticky;top:1.5rem;align-self:start;max-height:calc(100vh - 3rem);overflow-y:auto;}
+    .legal-toc details{border:0;background:transparent;}
+    .legal-toc summary{padding:0 0 1rem;pointer-events:none;}
+    .legal-toc summary::after{display:none;}
+    .legal-toc ol{padding:0;border-left:1px solid var(--line);padding-left:.7rem;}
+  }
+
+  .legal-body{max-width:780px;min-width:0;}
+  .legal-body h2{font-size:clamp(1.45rem,2.6vw,1.9rem);color:var(--forest);margin:3.2rem 0 1.1rem;padding-top:2.2rem;border-top:1px solid var(--line);scroll-margin-top:1.5rem;}
+  .legal-body h2:first-child{margin-top:0;padding-top:0;border-top:0;}
+  .legal-body h3{font-family:var(--sans);font-size:.98rem;font-weight:700;color:var(--garnet);margin:2rem 0 .7rem;letter-spacing:.01em;line-height:1.4;}
+  .legal-body h4{font-family:var(--sans);font-size:.9rem;font-weight:700;color:var(--forest);margin:1.5rem 0 .4rem;}
+  .legal-body p{color:var(--ink);}
+  .legal-body strong{font-weight:700;}
+  .legal-body ul{margin:0 0 1.4em;padding-left:1.25rem;}
+  .legal-body li{margin-bottom:.45em;padding-left:.3rem;}
+  .legal-body li::marker{color:var(--gold);}
+  .legal-body a{color:var(--garnet);text-decoration:underline;text-underline-offset:3px;}
+  .legal-body a:hover{color:var(--terracotta);}
+  .legal-body .caps{background:#FBF8F2;border-left:3px solid var(--gold);padding:1.1rem 1.3rem;font-size:.9rem;letter-spacing:.01em;}
+  .legal-note{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--line);font-size:.86rem;opacity:.8;}
+  .to-top{display:inline-flex;align-items:center;gap:.5rem;margin-top:2rem;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--garnet);min-height:44px;}
+
+</style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar">
+  <em>Paula Knight</em> &mdash; Integrative Health &amp; Functional Medicine Practitioner. <span class="sep">&bull;</span> <em>30,000+ coaching hours.</em> <span class="sep">&bull;</span> From a family that treats living past 90 as unremarkable.
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+  <a href="index.html#method">The Method</a>
+  <a href="index.html#services">Services</a>
+  <a href="index.html#stories">Client Stories</a>
+  <a href="index.html#about">About Paula</a>
+  <a href="index.html#fit">Is this for you?</a>
+  <a class="btn light-solid" href="index.html#assessment">Take the Assessment</a>
+</div>
+
+<!-- ══ HEADER ══ solid nav for inner pages -->
+<header class="site site--solid" id="top">
+  <div class="nav-bar">
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href="index.html" aria-label="Longevity Journey Coaching — home">
+      <img class="brand-logo" src="https://cdn.katalyst-crm.com/a/ecb886f0-28c8-0a25-3fbe-d63d1b0a8116" alt="Longevity Journey Coaching">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#method">The Method</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About Paula</a>
+    </nav>
+    <div class="nav-cta"><a class="btn light" href="index.html#assessment">Take the Assessment</a></div>
+  </div>
+</header>
+
+<!-- ══ LEGAL HERO ══ -->
+<section class="legal-hero">
+  <div class="wrap">
+    <span class="kicker">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="legal-meta">PDD INNOVATIONS LLC, d/b/a Longevity Journey Coaching &middot; Effective Date: <strong>October 16, 2026</strong></p>
+    <nav class="legal-switch" aria-label="Legal documents">
+      <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Use</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ══ LEGAL CONTENT ══ -->
+<main class="wrap">
+  <div class="legal-layout">
+    <aside class="legal-toc" aria-label="On this page">
+      <details id="tocDetails">
+        <summary>On this page</summary>
+        <ol>
+          <li><a href="#cookies-and-tracking-your-choices">Cookies and tracking: your choices</a></li>
+          <li><a href="#1-introduction-and-scope">1. Introduction and Scope</a></li>
+          <li><a href="#2-definitions-and-key-terms">2. Definitions and Key Terms</a></li>
+          <li><a href="#3-information-we-collect">3. Information We Collect</a></li>
+          <li><a href="#4-how-we-use-your-information">4. How We Use Your Information</a></li>
+          <li><a href="#5-legal-basis-for-processing-gdpr-compliance">5. Legal Basis for Processing (GDPR Compliance)</a></li>
+          <li><a href="#6-information-sharing-and-disclosure">6. Information Sharing and Disclosure</a></li>
+          <li><a href="#7-international-data-transfers">7. International Data Transfers</a></li>
+          <li><a href="#8-data-retention-and-deletion">8. Data Retention and Deletion</a></li>
+          <li><a href="#9-your-privacy-rights">9. Your Privacy Rights</a></li>
+          <li><a href="#10-children-s-privacy-protection">10. Children's Privacy Protection</a></li>
+          <li><a href="#11-data-security-and-protection-measures">11. Data Security and Protection Measures</a></li>
+          <li><a href="#12-cookies-and-tracking-technologies">12. Cookies and Tracking Technologies</a></li>
+          <li><a href="#13-third-party-services-and-links">13. Third-Party Services and Links</a></li>
+          <li><a href="#14-updates-to-this-privacy-policy">14. Updates to This Privacy Policy</a></li>
+          <li><a href="#15-contact-information-and-data-protection-officer">15. Contact Information and Data Protection Officer</a></li>
+          <li><a href="#16-jurisdiction-specific-provisions">16. Jurisdiction-Specific Provisions</a></li>
+          <li><a href="#17-automated-decision-making-ai-and-profiling">17. Automated Decision-Making, AI, and Profiling</a></li>
+          <li><a href="#18-biometric-and-wellness-data-protection">18. Biometric and Wellness Data Protection</a></li>
+          <li><a href="#19-marketing-and-communications">19. Marketing and Communications</a></li>
+          <li><a href="#20-data-minimization-and-purpose-limitation">20. Data Minimization and Purpose Limitation</a></li>
+        </ol>
+      </details>
+    </aside>
+    <article class="legal-body">
+<h2 id="cookies-and-tracking-your-choices">Cookies and tracking: your choices</h2>
+<p>We keep this simple. Essential cookies (sign-in, checkout, security, remembering this choice) always run. Two things are optional, and what happens by default depends on where you are:</p>
+<p>Website analytics — Namecheap shows us which pages and features are used so we can improve them. See Namecheap privacy policy.</p>
+<p>Campaign measurement — tells us whether an ad or campaign brought you here.</p>
+<p>It stores a small campaign record in your browser and shares limited activity (page views, purchases) with Meta to measure our advertising. This may use the _fbp and _fbc cookies. We never share what you write in forms or assessments. Meta privacy information.</p>
+<h3>What runs by default where you are</h3>
+<p>United States, Australia, New Zealand, Japan, Mexico: both run by default. For US residents, may contact us to turn campaign measurement off, this is how you opt out of the "sale" or "sharing" of your personal information under state privacy law.</p>
+<p>United Kingdom, Canada (outside Quebec), Switzerland, Brazil, South Korea, Singapore, Hong Kong, Taiwan, Malaysia, Philippines, Israel, South Africa, Nigeria, Kenya: analytics runs by default and you can object by contacting us; campaign measurement stays off.</p>
+<p>EU/EEA, Quebec, Turkey, India, China, Thailand, Vietnam, Indonesia, Russia, Saudi Arabia, UAE, Argentina, Colombia, Peru, Chile, and anywhere else or anywhere we can't place: nothing optional runs until you say yes.</p>
+<p>We never show a full-screen cookie wall. If your browser sends a privacy signal such as Global Privacy Control or Do Not Track, we treat it as a "no" everywhere and don't ask. A regional default is never recorded as your consent. You can change your mind at any time here, from Your Privacy Choices in the footer, or in your account privacy settings.</p>
+<h2 id="1-introduction-and-scope">1. Introduction and Scope</h2>
+<p>PDD INNOVATIONS LLC, a limited liability company organized under the laws of the State of Wyoming, doing business as Longevity Journey Coaching ("Company," "Longevity Journey," "we," "us," or "our"), is committed to protecting and respecting your privacy. This Privacy Policy ("Policy") explains how we collect, use, disclose, store, and protect your personal information when you use our website at longevityjourneycoaching.com, mobile application, and related services (collectively, the "Services").</p>
+<p>This Policy applies to all users of our Services worldwide and complies with applicable privacy laws including:</p>
+<ul>
+<li>California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) - United States</li>
+<li>Children's Online Privacy Protection Act (COPPA) - United States</li>
+<li>Virginia Consumer Data Protection Act (VCDPA) - United States</li>
+<li>Colorado Privacy Act (CPA) - United States</li>
+<li>Connecticut Data Privacy Act (CTDPA) - United States</li>
+<li>Utah Consumer Privacy Act (UCPA) - United States</li>
+<li>Texas Data Privacy and Security Act (TDPSA) - United States</li>
+<li>Oregon Consumer Privacy Act (OCPA) - United States</li>
+<li>Montana Consumer Data Privacy Act (MCDPA) - United States</li>
+<li>Iowa Consumer Data Protection Act - United States</li>
+<li>Indiana Consumer Data Protection Act - United States</li>
+<li>Tennessee Information Protection Act (TIPA) - United States</li>
+<li>Delaware Personal Data Privacy Act - United States</li>
+<li>New Hampshire Privacy Act - United States</li>
+<li>New Jersey Data Privacy Act - United States</li>
+<li>Nebraska Data Privacy Act - United States</li>
+<li>Maryland Online Data Privacy Act (MODPA) - United States</li>
+<li>Minnesota Consumer Data Privacy Act - United States</li>
+<li>FTC Health Breach Notification Rule (16 CFR Part 318) - United States</li>
+<li>General Data Protection Regulation (GDPR) - European Union</li>
+<li>Personal Information Protection and Electronic Documents Act (PIPEDA) - Canada</li>
+<li>Lei Geral de Proteção de Dados (LGPD) - Brazil</li>
+<li>Privacy Act 1988 - Australia</li>
+<li>Personal Data Protection Act (PDPA) - Singapore</li>
+<li>Data Protection Act 2018 - United Kingdom</li>
+<li>Other applicable regional and national privacy laws</li>
+</ul>
+<p class="caps"><strong>BY USING OUR SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS PRIVACY POLICY AND CONSENT TO THE COLLECTION, USE, AND DISCLOSURE OF YOUR PERSONAL INFORMATION AS DESCRIBED HEREIN.</strong></p>
+<h2 id="2-definitions-and-key-terms">2. Definitions and Key Terms</h2>
+<p>"Personal Information" or "Personal Data" means any information that identifies, relates to, describes, or can be associated with a particular individual. "Processing" means any operation performed on personal data, including collection, use, storage, disclosure, and deletion. "Data Controller" means the entity that determines the purposes and means of processing personal data. "Data Processor" means the entity that processes personal data on behalf of the data controller. "Data Subject" means the individual to whom personal data relates. "Sensitive Personal Information" includes health data, biometric data, precise geolocation, and other categories defined by applicable law. "Third Party" means any individual or entity other than you and Longevity Journey. "Services" means our website, mobile application, programs, courses, and related offerings.</p>
+<h2 id="3-information-we-collect">3. Information We Collect</h2>
+<h3>3.1 Information You Provide Directly</h3>
+<ul>
+<li><strong>Account Information:</strong> Name, email address, phone number, date of birth, gender, address</li>
+<li><strong>Profile Information:</strong> Bio, preferences, goals, wellness interests, profile photos</li>
+<li><strong>Payment Information:</strong> Credit card details, billing address, transaction history</li>
+<li><strong>Wellness Information:</strong> Wellness goals, fitness levels, program preferences, self-reported conditions</li>
+<li><strong>Communication Data:</strong> Messages, emails, chat conversations, support tickets</li>
+<li><strong>User-Generated Content:</strong> Posts, comments, reviews, testimonials, photos, videos</li>
+<li><strong>Survey and Feedback Data:</strong> Responses to questionnaires, polls, and feedback forms</li>
+<li><strong>Event Registration:</strong> Information for classes, workshops, and events</li>
+<li><strong>Verification Documents:</strong> Government-issued ID for age verification or parental consent</li>
+</ul>
+<h3>3.2 Information Collected Automatically</h3>
+<ul>
+<li><strong>Device Information:</strong> IP address, device type, operating system, browser type, device identifiers</li>
+<li><strong>Usage Data:</strong> Pages visited, time spent, click patterns, navigation paths, feature usage</li>
+<li><strong>Location Data:</strong> Approximate location based on IP address, precise location if permitted</li>
+<li><strong>Technical Data:</strong> Log files, error reports, performance metrics, system diagnostics</li>
+<li><strong>Cookies and Tracking:</strong> Session data, preferences, authentication tokens, analytics data</li>
+<li><strong>App Usage:</strong> Screen views, app interactions, crash reports, performance data</li>
+<li><strong>Network Information:</strong> Internet service provider, connection type, network performance</li>
+</ul>
+<h3>3.3 Information from Third Parties</h3>
+<ul>
+<li><strong>Social Media Platforms:</strong> Profile information when you connect social accounts</li>
+<li><strong>Payment Processors:</strong> Transaction verification and fraud prevention data</li>
+<li><strong>Marketing Partners:</strong> Lead generation and referral information</li>
+<li><strong>Public Databases:</strong> Information to verify identity or prevent fraud</li>
+<li><strong>Analytics Providers:</strong> Aggregated usage statistics and demographic data</li>
+<li><strong>Integration Partners:</strong> Data from connected wellness apps or wearable devices</li>
+</ul>
+<h3>3.4 Sensitive Personal Information</h3>
+<p>We may collect sensitive personal information including wellness-related data, biometric information, and precise geolocation data. We will obtain explicit consent before collecting such information and implement additional security measures for its protection.</p>
+<h3>3.5 Special Categories of Data (GDPR Article 9)</h3>
+<p>Where we process special categories of personal data as defined under GDPR Article 9 (including wellness-related data related to your educational journey), we rely on one or more of the following legal bases:</p>
+<ul>
+<li><strong>Explicit consent (Article 9(2)(a)):</strong> You provide explicit consent when submitting wellness questionnaires, assessments, or wellness goals through our platform</li>
+<li><strong>Legitimate activities (Article 9(2)(d)):</strong> Processing is carried out by our organization in the course of our legitimate wellness education activities with appropriate safeguards</li>
+<li><strong>Data manifestly made public (Article 9(2)(e)):</strong> Where you voluntarily share wellness-related experiences in community forums or testimonials</li>
+</ul>
+<p>You may withdraw consent for special category data processing at any time by contacting us at <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a>. Withdrawal does not affect the lawfulness of processing before withdrawal.</p>
+<h3>3.6 AI-Powered Features and Data Processing</h3>
+<p>Our Services include an AI-powered chat assistant that processes your data to provide personalized wellness guidance. In connection with these AI features, we collect and process:</p>
+<ul>
+<li><strong>Conversation Data:</strong> Messages you send to and receive from our AI assistant</li>
+<li><strong>Contextual Data:</strong> Your profile information, program enrollment, and wellness preferences used to personalize AI responses</li>
+<li><strong>Usage Patterns:</strong> Frequency and topics of AI interactions for service improvement</li>
+</ul>
+<p><strong>AI DISCLOSURE:</strong> In compliance with the EU AI Act (Article 50) and Colorado AI Act, we disclose that our chat assistant is powered by artificial intelligence. You are interacting with an AI system, not a human. AI-generated content may contain inaccuracies and should not be treated as medical advice.</p>
+<p>Your AI conversation data is stored securely and is not used to train third-party AI models. You may request deletion of your AI conversation history at any time through your account settings or by contacting us.</p>
+<h2 id="4-how-we-use-your-information">4. How We Use Your Information</h2>
+<p>We use your personal information for the following purposes, based on legitimate interests, contractual necessity, legal obligations, or your consent:</p>
+<h3>4.1 Service Provision and Improvement</h3>
+<ul>
+<li>Providing access to our wellness programs, courses, and content</li>
+<li>Creating and managing your user account and profile</li>
+<li>Processing payments and managing subscriptions</li>
+<li>Delivering personalized content and recommendations</li>
+<li>Facilitating communication between users and instructors</li>
+<li>Providing customer support and technical assistance</li>
+<li>Improving our Services through analytics and user feedback</li>
+<li>Developing new features and functionalities</li>
+</ul>
+<h3>4.2 Communication and Marketing</h3>
+<ul>
+<li>Sending service-related notifications and updates</li>
+<li>Delivering marketing communications about our Services (with consent)</li>
+<li>Responding to inquiries and providing customer support</li>
+<li>Sending newsletters and educational content</li>
+<li>Notifying you about events, classes, and special offers</li>
+<li>Conducting surveys and collecting feedback</li>
+</ul>
+<h3>4.3 Legal and Security Purposes</h3>
+<ul>
+<li>Complying with legal obligations and regulatory requirements</li>
+<li>Protecting against fraud, abuse, and security threats</li>
+<li>Enforcing our Terms of Use and other policies</li>
+<li>Resolving disputes and investigating violations</li>
+<li>Protecting the rights, property, and safety of Longevity Journey and users</li>
+<li>Conducting internal audits and risk assessments</li>
+</ul>
+<h3>4.4 Analytics and Research</h3>
+<ul>
+<li>Analyzing usage patterns and user behavior</li>
+<li>Conducting market research and trend analysis</li>
+<li>Measuring the effectiveness of our marketing campaigns</li>
+<li>Creating aggregated and anonymized statistics</li>
+<li>Improving our algorithms and recommendation systems</li>
+</ul>
+<h2 id="5-legal-basis-for-processing-gdpr-compliance">5. Legal Basis for Processing (GDPR Compliance)</h2>
+<p>For users in the European Union, we process your personal data based on the following legal grounds:</p>
+<ul>
+<li><strong>Consent:</strong> When you have given clear consent for specific processing activities</li>
+<li><strong>Contract Performance:</strong> To fulfill our contractual obligations to provide Services</li>
+<li><strong>Legitimate Interests:</strong> For our legitimate business interests that do not override your rights</li>
+<li><strong>Legal Obligation:</strong> To comply with applicable laws and regulations</li>
+<li><strong>Vital Interests:</strong> To protect your life or physical safety in emergency situations</li>
+<li><strong>Public Task:</strong> When processing is necessary for public interest or official authority</li>
+</ul>
+<p>You have the right to withdraw consent at any time where processing is based on consent, without affecting the lawfulness of processing based on consent before its withdrawal.</p>
+<h2 id="6-information-sharing-and-disclosure">6. Information Sharing and Disclosure</h2>
+<p><strong>WE DO NOT SELL, RENT, TRADE, OR SHARE YOUR PERSONAL INFORMATION WITH THIRD PARTIES FOR THEIR MARKETING PURPOSES.</strong> We only share anonymized, aggregated data that cannot be used to identify you individually.</p>
+<p>Any data shared with service providers is strictly for operating our Services and is subject to contractual data protection obligations.</p>
+<p>We may disclose limited information in the following narrowly defined circumstances:</p>
+<h3>6.1 Service Providers and Business Partners</h3>
+<ul>
+<li>Cloud hosting and data storage providers</li>
+<li>Payment processors and financial institutions</li>
+<li>AI and machine learning service providers</li>
+<li>Analytics and performance monitoring platforms</li>
+<li>Email and communication service providers</li>
+<li>Authentication and identity management providers</li>
+<li>Content management and delivery platforms</li>
+<li>Security and fraud prevention services</li>
+<li>Legal and professional service providers</li>
+</ul>
+<p>All service providers are contractually bound to protect your information and use it only for specified purposes.</p>
+<h3>6.2 Legal Requirements and Protection</h3>
+<ul>
+<li>To comply with legal obligations, court orders, or government requests</li>
+<li>To protect the rights, property, and safety of Longevity Journey, users, or the public</li>
+<li>To investigate and prevent fraud, abuse, or illegal activities</li>
+<li>To enforce our Terms of Use and other agreements</li>
+<li>In connection with legal proceedings or investigations</li>
+</ul>
+<h3>6.3 Business Transfers</h3>
+<p>In the event of a merger, acquisition, sale of assets, or bankruptcy, your personal information may be transferred to the acquiring entity, subject to the same privacy protections.</p>
+<h3>6.4 With Your Consent</h3>
+<p>We may share your information with third parties when you have given explicit consent for such sharing.</p>
+<h2 id="7-international-data-transfers">7. International Data Transfers</h2>
+<p>As a United States company operating globally, we may transfer your personal information to countries outside your jurisdiction, including:</p>
+<ul>
+<li>United States (our primary data processing location)</li>
+<li>Canada (service providers and business partners)</li>
+<li>European Union (service providers and users)</li>
+<li>Other countries where we have users or service providers</li>
+</ul>
+<p>When transferring data internationally, we implement appropriate safeguards including:</p>
+<ul>
+<li>Standard Contractual Clauses (SCCs) approved by relevant authorities</li>
+<li>Adequacy decisions by competent data protection authorities</li>
+<li>Binding Corporate Rules for intra-group transfers</li>
+<li>Certification schemes and codes of conduct</li>
+<li>Explicit consent where required by law</li>
+</ul>
+<h2 id="8-data-retention-and-deletion">8. Data Retention and Deletion</h2>
+<p>We retain your personal information only as long as necessary for the purposes outlined in this Policy or as required by applicable law:</p>
+<ul>
+<li><strong>Account Information:</strong> Retained while your account is active and for 7 years after closure</li>
+<li><strong>Payment Data:</strong> Retained for 7 years for tax and accounting purposes</li>
+<li><strong>Wellness &amp; Education Data:</strong> Retained while your account is active or until consent is withdrawn</li>
+<li><strong>Communication Records:</strong> Retained for 3 years for customer service purposes</li>
+<li><strong>Marketing Data:</strong> Retained until you opt-out or for 2 years of inactivity</li>
+<li><strong>Legal and Compliance Data:</strong> Retained as required by applicable laws</li>
+<li><strong>Analytics Data:</strong> Aggregated data may be retained indefinitely after anonymization</li>
+</ul>
+<p>When personal information is no longer needed, we will securely delete or anonymize it using industry-standard methods.</p>
+<h2 id="9-your-privacy-rights">9. Your Privacy Rights</h2>
+<p>Depending on your jurisdiction, you may have the following rights regarding your personal information:</p>
+<h3>9.1 Universal Rights (Available to All Users)</h3>
+<ul>
+<li><strong>Right to Access:</strong> Request information about what personal data we hold about you</li>
+<li><strong>Right to Correction:</strong> Request correction of inaccurate or incomplete information</li>
+<li><strong>Right to Deletion:</strong> Request deletion of your personal information (subject to legal requirements)</li>
+<li><strong>Right to Opt-Out:</strong> Unsubscribe from marketing communications</li>
+<li><strong>Right to Data Portability:</strong> Request a copy of your data in a portable format</li>
+</ul>
+<h3>9.2 GDPR Rights (EU Residents)</h3>
+<ul>
+<li><strong>Right to Restrict Processing:</strong> Limit how we use your personal data</li>
+<li><strong>Right to Object:</strong> Object to processing based on legitimate interests</li>
+<li><strong>Right to Withdraw Consent:</strong> Withdraw consent for consent-based processing</li>
+<li><strong>Right to Lodge a Complaint:</strong> File complaints with data protection authorities</li>
+<li><strong>Right to Data Protection Impact Assessment:</strong> Information about automated decision-making</li>
+</ul>
+<h3>9.3 CCPA/CPRA Rights (California Residents)</h3>
+<ul>
+<li><strong>Right to Know:</strong> Detailed information about data collection and use</li>
+<li><strong>Right to Delete:</strong> Request deletion of personal information</li>
+<li><strong>Right to Opt-Out of Sale:</strong> Opt-out of the sale of personal information</li>
+<li><strong>Right to Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
+<li><strong>Right to Correct:</strong> Request correction of inaccurate personal information</li>
+<li><strong>Right to Limit Use of Sensitive Personal Information:</strong> Restrict use of sensitive data</li>
+</ul>
+<h3>9.4 Exercising Your Rights</h3>
+<p>To exercise your privacy rights, contact us using the information provided in Section 15.</p>
+<p>We will respond to your request within the timeframes required by applicable law (typically 30 days for GDPR and 45 days for CCPA).</p>
+<h2 id="10-children-s-privacy-protection">10. Children's Privacy Protection</h2>
+<h3>10.1 Age Restrictions</h3>
+<p>Our Services are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13 without verifiable parental consent.</p>
+<h3>10.2 Parental Consent for Minors (13-17 Years)</h3>
+<p>For users between 13-17 years of age, we require verifiable parental consent before collecting, using, or disclosing personal information. Parents have the right to:</p>
+<ul>
+<li>Review their child's personal information</li>
+<li>Request deletion of their child's personal information</li>
+<li>Refuse to permit further collection or use of their child's information</li>
+<li>Receive notification of our information practices regarding children</li>
+<li>Consent to collection and use but not disclosure to third parties</li>
+</ul>
+<h3>10.3 COPPA Compliance</h3>
+<p>We comply with the Children's Online Privacy Protection Act (COPPA) and implement additional safeguards for children's information including:</p>
+<ul>
+<li>Enhanced security measures for children's data</li>
+<li>Limited data collection to what is necessary for participation</li>
+<li>No behavioral advertising directed at children</li>
+<li>Parental access and control mechanisms</li>
+<li>Regular review and deletion of unnecessary children's data</li>
+</ul>
+<h2 id="11-data-security-and-protection-measures">11. Data Security and Protection Measures</h2>
+<p>We implement comprehensive security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction:</p>
+<h3>11.1 Technical Safeguards</h3>
+<ul>
+<li>Encryption of data in transit and at rest using industry-standard protocols</li>
+<li>Multi-factor authentication for administrative access</li>
+<li>Regular security assessments and penetration testing</li>
+<li>Secure coding practices and vulnerability management</li>
+<li>Network security monitoring and intrusion detection systems</li>
+<li>Regular software updates and security patches</li>
+<li>Secure data backup and disaster recovery procedures</li>
+</ul>
+<h3>11.2 Organizational Safeguards</h3>
+<ul>
+<li>Employee training on data protection and privacy practices</li>
+<li>Background checks for employees with access to personal information</li>
+<li>Confidentiality agreements and access controls</li>
+<li>Data protection impact assessments for high-risk processing</li>
+<li>Incident response procedures and breach notification protocols</li>
+<li>Regular audits and compliance monitoring</li>
+<li>Privacy by design principles in system development</li>
+</ul>
+<h3>11.3 Data Breach Notification</h3>
+<p>In the event of a data breach that poses a risk to your rights and freedoms, we will notify you and relevant authorities within the timeframes required by applicable law (typically 72 hours for authorities and without undue delay for individuals).</p>
+<h3>11.4 FTC Health Breach Notification Rule</h3>
+<p>As a provider of wellness education services that may handle personal wellness records, we comply with the FTC Health Breach Notification Rule (16 CFR Part 318). In the event of a breach of unsecured personally identifiable wellness information:</p>
+<ul>
+<li>We will notify affected individuals without unreasonable delay and no later than sixty (60) days after discovery of the breach</li>
+<li>We will notify the Federal Trade Commission as required by the Rule</li>
+<li>If the breach involves 500 or more individuals, we will provide notice to prominent media outlets serving the affected area</li>
+<li>Notifications will include a description of the breach, the types of information involved, steps individuals should take, and what we are doing in response</li>
+<li>We maintain a log of all breaches and make it available to the FTC upon request</li>
+</ul>
+<h2 id="12-cookies-and-tracking-technologies">12. Cookies and Tracking Technologies</h2>
+<h3>12.1 Types of Cookies We Use</h3>
+<ul>
+<li><strong>Essential Cookies:</strong> Necessary for basic website functionality and security</li>
+<li><strong>Performance Cookies:</strong> Collect information about how you use our Services</li>
+<li><strong>Functional Cookies:</strong> Remember your preferences and personalize your experience</li>
+<li><strong>Marketing Cookies:</strong> Track your activity for advertising and marketing purposes</li>
+<li><strong>Third-Party Cookies:</strong> Set by our partners for analytics and advertising</li>
+</ul>
+<h3>12.2 Other Tracking Technologies</h3>
+<ul>
+<li><strong>Web Beacons:</strong> Small graphics that track email opens and website visits</li>
+<li><strong>Pixel Tags:</strong> Monitor user behavior and measure advertising effectiveness</li>
+<li><strong>Local Storage:</strong> Store information locally on your device</li>
+<li><strong>Session Replay Tools:</strong> Record user interactions for analysis and improvement</li>
+<li><strong>Analytics Tools:</strong> Third-party analytics and performance monitoring services</li>
+</ul>
+<h3>12.3 Managing Cookies</h3>
+<p>You can control cookies through your browser settings, our cookie preference center, or opt-out tools provided by advertising networks. Note that disabling certain cookies may affect the functionality of our Services.</p>
+<h3>12.4 Global Privacy Control (GPC)</h3>
+<p>We recognize and honor the Global Privacy Control (GPC) signal as a valid opt-out preference signal. When we detect a GPC signal from your browser, we will treat it as a request to opt out of the sale or sharing of your personal information, as required by the CCPA/CPRA, Colorado Privacy Act, Connecticut Data Privacy Act, and other applicable state privacy laws. You can enable GPC in your browser settings or through a browser extension. For more information about GPC, visit <a href="https://globalprivacycontrol.org" target="_blank" rel="noopener">globalprivacycontrol.org</a>.</p>
+<h2 id="13-third-party-services-and-links">13. Third-Party Services and Links</h2>
+<p>Our Services may contain links to third-party websites, applications, or services that are not owned or controlled by Longevity Journey. This Privacy Policy does not apply to third-party services.</p>
+<h3>13.1 Third-Party Integrations</h3>
+<ul>
+<li><strong>Social Media Platforms:</strong> Third-party social media and content sharing platforms</li>
+<li><strong>Payment Processors:</strong> Third-party payment processing and financial services providers</li>
+<li><strong>Analytics Services:</strong> Third-party analytics, performance, and audience measurement platforms</li>
+<li><strong>Communication Tools:</strong> Email, messaging, and customer support service providers</li>
+<li><strong>Cloud Services:</strong> Cloud infrastructure and hosting providers</li>
+<li><strong>Marketing Platforms:</strong> Marketing automation and advertising platforms</li>
+</ul>
+<h3>13.2 Third-Party Privacy Practices</h3>
+<p>We encourage you to review the privacy policies of any third-party services you access through our Services. We are not responsible for the privacy practices or content of third-party services.</p>
+<h2 id="14-updates-to-this-privacy-policy">14. Updates to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of material changes through:</p>
+<ul>
+<li>Email notification to registered users</li>
+<li>Prominent notice on our website and mobile application</li>
+<li>In-app notifications and alerts</li>
+<li>Updates to our Terms of Use or other communications</li>
+</ul>
+<p>Your continued use of our Services after the effective date of any changes constitutes acceptance of the updated Privacy Policy. If you do not agree to the changes, you should discontinue use of our Services.</p>
+<h2 id="15-contact-information-and-data-protection-officer">15. Contact Information and Data Protection Officer</h2>
+<h3>15.1 General Privacy Inquiries</h3>
+<ul>
+<li>PDD INNOVATIONS LLC d/b/a Longevity Journey</li>
+<li>Privacy Officer</li>
+<li><strong>Email:</strong> <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a></li>
+<li><strong>Website:</strong> <a href="https://longevityjourneycoaching.com">https://longevityjourneycoaching.com</a></li>
+<li><strong>Address:</strong> 30 N Gould St. Ste R, Sheridan, WY 82801</li>
+</ul>
+<h3>15.2 Data Protection Officer (DPO)</h3>
+<p>For GDPR-related inquiries:</p>
+<ul>
+<li>Data Protection Officer</li>
+<li><strong>Email:</strong> <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a></li>
+</ul>
+<h3>15.3 Regulatory Authorities</h3>
+<p>If you believe we have not addressed your privacy concerns adequately, you have the right to lodge a complaint with the relevant data protection authority in your jurisdiction:</p>
+<ul>
+<li><strong>Canada:</strong> Office of the Privacy Commissioner of Canada (<a href="https://www.priv.gc.ca" target="_blank" rel="noopener">www.priv.gc.ca</a>)</li>
+<li><strong>EU:</strong> Your local Data Protection Authority</li>
+<li><strong>California:</strong> California Attorney General (<a href="https://oag.ca.gov" target="_blank" rel="noopener">oag.ca.gov</a>)</li>
+<li><strong>UK:</strong> Information Commissioner's Office (<a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>)</li>
+<li><strong>Australia:</strong> Office of the Australian Information Commissioner (<a href="https://oaic.gov.au" target="_blank" rel="noopener">oaic.gov.au</a>)</li>
+</ul>
+<h2 id="16-jurisdiction-specific-provisions">16. Jurisdiction-Specific Provisions</h2>
+<h3>16.1 California Residents (CCPA/CPRA)</h3>
+<p>In the past 12 months, we have collected the following categories of personal information: identifiers, commercial information, internet activity, geolocation data, audio/visual information, professional or employment-related information, education information, and inferences. We do not sell or share personal information with third parties as defined under the CCPA/CPRA. We only use anonymized, aggregated data for analytics and service improvement purposes. We honor the Global Privacy Control (GPC) signal as a valid opt-out of sale/sharing request. California residents may submit verified consumer requests no more than twice within a twelve-month period. We will respond within forty-five (45) days, with one extension of up to forty-five (45) additional days where reasonably necessary. We will not discriminate against you for exercising your CCPA/CPRA rights.</p>
+<h3>16.2 European Union and United Kingdom Residents (GDPR / UK GDPR)</h3>
+<p>PDD INNOVATIONS LLC (d/b/a Longevity Journey) acts as the data controller for personal information collected through our Services. We have appointed a Data Protection Officer and EU representative as required by GDPR. Under the GDPR and UK GDPR, you have the following additional rights:</p>
+<ul>
+<li>Right to be informed about the collection and use of your personal data</li>
+<li>Right of access to your personal data (Subject Access Request)</li>
+<li>Right to rectification of inaccurate personal data</li>
+<li>Right to erasure ("right to be forgotten")</li>
+<li>Right to restrict processing</li>
+<li>Right to data portability in a machine-readable format</li>
+<li>Right to object to processing, including direct marketing</li>
+<li>Rights related to automated decision-making and profiling</li>
+<li>Right to lodge a complaint with your local supervisory authority</li>
+</ul>
+<p>We process your personal data only when we have a lawful basis to do so under Article 6 of the GDPR. We do not transfer your personal data outside the EEA/UK without appropriate safeguards, such as Standard Contractual Clauses. To exercise any of your GDPR rights, contact our Data Protection Officer at <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a>. We will respond within 30 days of receipt.</p>
+<h3>16.3 Canadian Residents (PIPEDA)</h3>
+<p>Where applicable, we comply with PIPEDA and provincial privacy laws when processing personal information of Canadian residents. You have the right to access your personal information and request corrections. Complaints can be filed with the Privacy Commissioner of Canada.</p>
+<h3>16.4 Brazilian Residents (LGPD)</h3>
+<p>We process personal data in accordance with LGPD. You have rights to access, correct, delete, and port your personal data. Contact our Data Protection Officer for LGPD-related inquiries.</p>
+<h3>16.5 Additional U.S. State Privacy Laws</h3>
+<p>Residents of the following states have additional privacy rights similar to those provided under the CCPA/CPRA. We extend the rights described in Section 9 to residents of these states as required by applicable law:</p>
+<ul>
+<li><strong>Virginia (VCDPA):</strong> Right to access, correct, delete, obtain a copy, and opt out of targeted advertising, sale, and profiling</li>
+<li><strong>Colorado (CPA):</strong> Same rights as Virginia; we also honor universal opt-out mechanisms including GPC</li>
+<li><strong>Connecticut (CTDPA):</strong> Same rights as Virginia; includes right to opt out of sale and profiling</li>
+<li><strong>Texas (TDPSA):</strong> Right to access, correct, delete, and opt out of sale, targeted advertising, and profiling</li>
+<li><strong>Oregon (OCPA):</strong> Right to access, correct, delete, data portability, and opt out of targeted advertising and sale</li>
+<li><strong>Montana (MCDPA), Iowa, Indiana, Tennessee, Delaware, New Hampshire, New Jersey, Nebraska, Maryland, Minnesota:</strong> Substantially similar rights to access, correct, delete, and opt out of sale and targeted advertising as provided under each state's respective privacy law</li>
+</ul>
+<p>To exercise your rights under any of these state laws, contact us at <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a>. We will respond within the timeframe specified by your state's applicable law (typically 45 days). If we deny your request, you have the right to appeal, and we will provide instructions for the appeal process.</p>
+<h3>16.6 Canada's Anti-Spam Legislation (CASL)</h3>
+<p>In compliance with Canada's Anti-Spam Legislation (S.C. 2010, c. 23), we commit to the following for Canadian users:</p>
+<ul>
+<li>We obtain express or implied consent before sending commercial electronic messages (CEMs) to Canadian recipients</li>
+<li>All CEMs include our contact information and a clear unsubscribe mechanism</li>
+<li>Unsubscribe requests are processed within ten (10) business days</li>
+<li>We do not install software or programs on your device without express consent</li>
+<li>Express consent is obtained through clear opt-in (not pre-checked boxes) at the time of account registration or newsletter sign-up</li>
+<li>Implied consent is based on an existing business relationship (e.g., you purchased a product or service within the last two years) or an existing non-business relationship (e.g., you made a donation or volunteered within the last two years)</li>
+</ul>
+<h3>16.7 CAN-SPAM Act Compliance</h3>
+<p>In compliance with the CAN-SPAM Act (15 U.S.C. § 7701 et seq.):</p>
+<ul>
+<li>We will not use false or misleading header information or deceptive subject lines</li>
+<li>All commercial messages are clearly identified as advertisements where required</li>
+<li><strong>Every commercial email includes our physical mailing address:</strong> 30 N Gould St, Ste R, Sheridan, WY 82801</li>
+<li>A clear and conspicuous opt-out mechanism is included in every commercial email</li>
+<li>Opt-out requests are honored within ten (10) business days</li>
+<li>We do not sell or transfer email addresses to third parties for their marketing purposes</li>
+<li>We monitor third-party email marketing conducted on our behalf to ensure compliance</li>
+</ul>
+<h2 id="17-automated-decision-making-ai-and-profiling">17. Automated Decision-Making, AI, and Profiling</h2>
+<p>We may use automated decision-making, artificial intelligence, and profiling to:</p>
+<ul>
+<li>Personalize content and wellness recommendations</li>
+<li>Provide AI-powered chat assistance for wellness guidance</li>
+<li>Detect and prevent fraud</li>
+<li>Optimize marketing campaigns</li>
+<li>Improve user experience and engagement</li>
+<li>Match content to your wellness journey stage</li>
+</ul>
+<h3>17.1 AI Transparency</h3>
+<p>In compliance with the EU AI Act and Colorado AI Act, we provide the following disclosures about our AI systems:</p>
+<ul>
+<li>Our AI chat assistant uses large language models to generate responses — it is clearly identified as AI, not a human</li>
+<li>AI-generated content is not a substitute for professional medical, legal, or financial advice</li>
+<li>Your conversations with AI are processed by our AI service providers under data processing agreements</li>
+<li>AI inputs are not used to train third-party foundation models</li>
+<li>We implement human oversight of AI outputs and regularly review for accuracy and safety</li>
+<li>You may opt out of AI-personalized content by contacting us at <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a></li>
+</ul>
+<h3>17.2 Your Rights Regarding Automated Decisions</h3>
+<p>Under GDPR Article 22 and applicable state laws, you have the right to: (a) be informed about automated decision-making; (b) request human intervention for decisions that significantly affect you; (c) express your point of view and contest automated decisions; (d) obtain an explanation of the logic involved; and (e) opt out of profiling that produces legal or similarly significant effects. We do not make any decisions based solely on automated processing that produce legal effects or similarly significantly affect you without human review.</p>
+<h2 id="18-biometric-and-wellness-data-protection">18. Biometric and Wellness Data Protection</h2>
+<p>If we collect biometric identifiers or wellness-related information, we will:</p>
+<ul>
+<li>Obtain explicit consent before collection</li>
+<li>Implement enhanced security measures</li>
+<li>Limit retention to the minimum necessary period</li>
+<li>Provide clear opt-out mechanisms</li>
+<li>Comply with applicable data protection and privacy laws</li>
+<li>Use de-identification and anonymization techniques where possible</li>
+</ul>
+<h2 id="19-marketing-and-communications">19. Marketing and Communications</h2>
+<h3>19.1 Consent for Marketing</h3>
+<p>We will only send you marketing communications if you have consented to receive them. You can opt-out at any time using the unsubscribe link in our emails or by contacting us directly.</p>
+<h3>19.2 Types of Communications</h3>
+<ul>
+<li>Service announcements and updates</li>
+<li>Educational content and wellness tips</li>
+<li>Event invitations and class schedules</li>
+<li>Product recommendations and special offers</li>
+<li>Newsletters and community updates</li>
+<li>Survey and feedback requests</li>
+</ul>
+<h2 id="20-data-minimization-and-purpose-limitation">20. Data Minimization and Purpose Limitation</h2>
+<p>We adhere to the principles of data minimization and purpose limitation by:</p>
+<ul>
+<li>Collecting only personal information necessary for specified purposes</li>
+<li>Using personal information only for the purposes for which it was collected</li>
+<li>Regularly reviewing and deleting unnecessary personal information</li>
+<li>Implementing privacy by design in our systems and processes</li>
+<li>Conducting privacy impact assessments for new processing activities</li>
+</ul>
+<p>© 2026 Longevity Journey Coaching. All Rights Reserved.</p>
+<p>This Privacy Policy is effective as of the date stated above and supersedes all previous versions.</p>
+<p class="caps"><strong>BY USING OUR SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS PRIVACY POLICY.</strong></p>
+
+      <a class="to-top" href="#top">&uarr; Back to top</a>
+    </article>
+  </div>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="wrap">
+    <a class="foot-mark" href="index.html" aria-label="Longevity Journey Coaching — home">
+      <img class="foot-logo" src="https://cdn.katalyst-crm.com/a/ecb886f0-28c8-0a25-3fbe-d63d1b0a8116" alt="Longevity Journey Coaching">
+    </a>
+    <p class="foot-tag">Longevity coaching for the mind, body, and biology &mdash; worldwide, online.</p>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="index.html#method">The Method</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About Paula</a>
+        <a href="index.html#stories">Client Stories</a>
+      </div>
+      <div class="foot-col">
+        <h4>Start Here</h4>
+        <a href="longevity-assessment.html">Take the Longevity Assessment</a>
+        <a href="index.html#services">Book an initial coaching call &mdash; $129</a>
+        <span>Coffee Break Club &mdash; Mon&ndash;Fri, live on Zoom</span>
+      </div>
+      <div class="foot-col">
+        <h4>Visit</h4>
+        <span>30 North Gould Street, Ste R</span>
+        <span>Sheridan, WY 82801, US</span>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <a href="https://www.instagram.com/longevity.journey.coaching" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@longevityjourneycoaching" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.tiktok.com/@longevityjourneyc" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/Longevity-Journey-Coaching" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/in/paula-knight-longevity-journey-coaching" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/longevityjourne" target="_blank" rel="noopener">X (Twitter)</a>
+        <a href="https://www.reddit.com/user/longevityjourney" target="_blank" rel="noopener">Reddit</a>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <div><a href="privacy-policy.html">Privacy Policy</a>&middot;<a href="terms-of-service.html">Terms</a></div>
+      <div>&copy; 2026 Longevity Journey Coaching. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var burger = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  var closeBtn = document.getElementById('mobileMenuClose');
+  function setOpen(open){
+    menu.classList.toggle('open', open);
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.body.classList.toggle('menu-open', open);
+  }
+  burger.addEventListener('click', function(){ setOpen(!menu.classList.contains('open')); });
+  if(closeBtn) closeBtn.addEventListener('click', function(){ setOpen(false); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setOpen(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+  menu.addEventListener('click', function(e){ if(e.target === menu) setOpen(false); });
+  window.addEventListener('resize', function(){ if(window.innerWidth >= 1024) setOpen(false); });
+})();
+</script>
+<script>
+(function(){
+  // collapse TOC on small screens; highlight current section
+  var d = document.getElementById('tocDetails');
+  if (d && window.innerWidth >= 1024) d.setAttribute("open", "");
+  var links = document.querySelectorAll('.legal-toc a');
+  if (d) links.forEach(function(a){ a.addEventListener('click', function(){ if (window.innerWidth < 1024) d.removeAttribute('open'); }); });
+  if (!('IntersectionObserver' in window)) return;
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        links.forEach(function(l){ l.classList.remove('active'); });
+        var a = map[e.target.id]; if (a) a.classList.add('active');
+      }
+    });
+  }, { rootMargin: '0px 0px -75% 0px' });
+  document.querySelectorAll('.legal-body h2[id]').forEach(function(h){ obs.observe(h); });
+})();
+</script>
+</body>
+</html>

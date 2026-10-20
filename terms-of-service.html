@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use and Service Agreement — Longevity Journey Coaching</title>
+<meta name="description" content="Terms of Use and Service Agreement for Longevity Journey Coaching (PDD INNOVATIONS LLC).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#1C3A10;
+    --garnet:#7B2142;
+    --wine:#5C1A35;
+    --gold:#C9933A;
+    --terracotta:#C4622D;
+    --parchment:#F5F0E8;
+    --sage:#3D6B20;
+    --plum:#2C1020;
+    --parchment-2:#F5F0E8;
+    --ink:#1C3A10;
+    --ink-soft:#1C3A10;
+    --line:rgba(28,58,16,.16);
+    --line-light:rgba(245,240,232,.18);
+    --serif:'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+    --sans:'Manrope', system-ui, Helvetica, Arial, sans-serif;
+    --gutter:clamp(1.25rem, 5vw, 4.5rem);
+    --max:1240px;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--parchment);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16.5px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-wrap:break-word;}
+  em,i,cite,blockquote,q{font-style:normal;}
+  img,svg,video{max-width:100%;height:auto;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0;letter-spacing:-.005em;}
+  h1 em,h2 em,h3 em,h4 em{font-weight:500;font-style:normal;}
+  p{margin:0 0 1.1em;}
+  .wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter);}
+  .wrap-tight{max-width:960px;margin-inline:auto;padding-inline:var(--gutter);}
+
+  /* all-caps micro label */
+  .kicker{font-family:var(--sans);font-size:.7rem;letter-spacing:.36em;text-transform:uppercase;color:var(--garnet);font-weight:600;margin-bottom:1.2rem;display:block;}
+  .kicker.on-dark{color:var(--gold);}
+
+  /* ── BUTTONS ── */
+  .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:normal;line-height:1.35;min-height:52px;padding:1rem 2.4rem;font-family:var(--sans);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;border:1px solid var(--forest);color:var(--forest);background:transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s;width:100%;}
+  .btn:hover{background:var(--forest);color:var(--parchment);}
+  .btn.solid{background:var(--terracotta);border-color:var(--terracotta);color:#F5F0E8;}
+  .btn.solid:hover{background:var(--garnet);border-color:var(--garnet);color:#F5F0E8;}
+  .btn.light{border-color:rgba(245,240,232,.9);color:#F5F0E8;}
+  .btn.light:hover{background:#F5F0E8;color:var(--forest);}
+  .btn.light-solid{background:var(--terracotta);border-color:var(--terracotta);color:#F5F0E8;}
+  .btn.light-solid:hover{background:var(--gold);border-color:var(--gold);color:var(--plum);}
+  @media(min-width:640px){.btn{width:auto;}}
+  .btn-row{display:flex;flex-direction:column;gap:.9rem;align-items:stretch;}
+  @media(min-width:640px){.btn-row{flex-direction:row;align-items:center;flex-wrap:wrap;}}
+
+  /* ── TOPBAR (announcement strip above nav) ── */
+  .topbar{background:var(--plum);color:rgba(245,240,232,.92);border-bottom:1px solid rgba(201,147,58,.4);font-family:var(--sans);font-size:.72rem;letter-spacing:.06em;line-height:1.55;text-align:center;padding:.7rem clamp(1rem,4vw,2rem);}
+  .topbar em{font-style:normal;color:var(--gold);font-weight:600;letter-spacing:.05em;}
+  .topbar .sep{color:var(--gold);opacity:.55;margin:0 .55em;}
+  @media(max-width:640px){.topbar{font-size:.68rem;letter-spacing:.02em;line-height:1.5;text-align:center;padding:.65rem 1rem;}}
+
+  /* ── NAV ── */
+  header.site{position:absolute;inset:0 0 auto 0;z-index:40;color:#F5F0E8;}
+  .nav-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.4rem var(--gutter);}
+  .brand{font-family:var(--serif);font-size:1.35rem;letter-spacing:.28em;text-transform:uppercase;font-weight:500;display:flex;align-items:center;gap:.7rem;line-height:1.1;min-width:0;min-height:44px;color:#F5F0E8;}
+  .brand-logo{height:77px;width:auto;display:block;}
+  @media(min-width:640px){.brand-logo{height:96px;}}
+  .brand .mark{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.1;flex:none;}
+  .nav-links{display:none;gap:2.4rem;font-family:var(--sans);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:600;}
+  .nav-links a{padding:.6rem 0;border-bottom:1px solid transparent;min-height:44px;display:inline-flex;align-items:center;}
+  .nav-links a:hover{border-color:currentColor;}
+  .nav-cta{display:none;}
+  .nav-cta .btn{min-height:44px;padding:.6rem 1.4rem;width:auto;font-size:.68rem;letter-spacing:.22em;}
+  @media(min-width:1024px){.nav-links{display:flex;}.nav-cta{display:block;}}
+  @media(max-width:1023px){.brand{order:-1;}.hamburger{order:2;}}
+  .hamburger{background:none;border:0;width:48px;height:48px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;cursor:pointer;padding:0;z-index:60;color:inherit;}
+  .hamburger span{display:block;width:26px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s;}
+  .hamburger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
+  .hamburger.is-open span:nth-child(2){opacity:0;}
+  .hamburger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);}
+  @media(min-width:1024px){.hamburger{display:none;}}
+  .mobile-menu{position:fixed;inset:0;background:var(--plum);color:var(--parchment);display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:1rem;opacity:0;pointer-events:none;transition:opacity .3s;z-index:50;padding:clamp(4.5rem,20vw,5.5rem) var(--gutter) var(--gutter);overflow-y:auto;}
+  .mobile-menu.open{opacity:1;pointer-events:auto;}
+  .mobile-menu a{font-family:var(--serif);font-size:1.7rem;padding:.4rem 1rem;}
+  .mobile-menu .btn{margin-top:1.2rem;max-width:340px;font-size:.64rem;letter-spacing:.14em;padding:.95rem 1.6rem;white-space:nowrap;}
+  .mobile-menu-close{position:absolute;top:1.3rem;right:var(--gutter);width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:1px solid rgba(245,240,232,.35);border-radius:50%;color:var(--parchment);font-size:1.4rem;line-height:1;cursor:pointer;padding:0;z-index:2;}
+  .mobile-menu-close:hover{background:rgba(245,240,232,.12);}
+
+  /* ── HERO SHELL (founder-style, light bg — needs solid dark nav) ── */
+  .hero-shell{background:var(--parchment);position:relative;}
+  header.site--solid{position:relative;inset:auto;background:var(--forest);color:#F5F0E8;}
+  header.site--solid .brand{color:#F5F0E8;}
+  header.site--solid .nav-links a{color:rgba(245,240,232,.92);}
+  header.site--solid .nav-cta .btn{border-color:var(--terracotta);}
+
+  /* ── FOOTER ── */
+  footer{background:var(--plum);color:var(--parchment);padding:clamp(3.5rem,7vw,5.5rem) 0 2.4rem;text-align:center;}
+  .foot-mark{margin-bottom:1.4rem;display:inline-flex;flex-direction:column;align-items:center;gap:.9rem;}
+  .foot-logo{height:132px;width:auto;display:block;}
+  .foot-mark svg{width:38px;height:38px;stroke:var(--gold);fill:none;stroke-width:1.1;}
+  .foot-brand-name{font-family:var(--serif);font-size:1.1rem;letter-spacing:.32em;text-transform:uppercase;font-weight:500;color:var(--parchment);}
+  .foot-tag{font-family:var(--serif);font-size:clamp(1.2rem,2.6vw,1.55rem);color:var(--gold);max-width:680px;margin:1rem auto 2.4rem;line-height:1.5;}
+  .foot-cols{display:grid;grid-template-columns:1fr;gap:2rem;text-align:left;border-top:1px solid var(--line-light);padding-top:2.6rem;max-width:960px;margin-inline:auto;}
+  @media(min-width:640px){.foot-cols{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:900px){.foot-cols{grid-template-columns:repeat(4,1fr);text-align:left;}}
+  .foot-col{min-width:0;}
+  .foot-col h4{font-family:var(--sans);font-size:.64rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:600;}
+  .foot-col a,.foot-col span{display:block;padding:.55rem 0;font-size:.9rem;color:rgba(245,240,232,.85);min-height:44px;line-height:1.4;}
+  .foot-col a:hover{color:#F5F0E8;}
+  .foot-legal{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--line-light);font-size:.78rem;color:rgba(245,240,232,.6);display:flex;flex-direction:column;gap:.6rem;align-items:center;justify-content:center;text-align:center;}
+  .foot-legal a{margin:0 .8rem;}
+
+  body.menu-open{overflow:hidden;}
+
+  /* ── LEGAL PAGES ── */
+  .legal-hero{background:var(--forest);color:var(--parchment);padding:clamp(2.5rem,6vw,4.5rem) 0 clamp(3rem,7vw,5rem);border-bottom:1px solid rgba(201,147,58,.35);}
+  .legal-hero .kicker{color:var(--gold);}
+  .legal-hero h1{font-size:clamp(2rem,4.6vw,3.4rem);color:var(--parchment);max-width:900px;}
+  .legal-meta{margin-top:1.4rem;font-size:.9rem;color:rgba(245,240,232,.82);letter-spacing:.02em;}
+  .legal-meta strong{color:var(--gold);font-weight:600;}
+  .legal-switch{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem;}
+  .legal-switch a{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;padding:.7rem 1.2rem;border:1px solid rgba(245,240,232,.4);min-height:44px;display:inline-flex;align-items:center;}
+  .legal-switch a[aria-current="page"]{background:var(--terracotta);border-color:var(--terracotta);}
+  .legal-switch a:not([aria-current]):hover{background:rgba(245,240,232,.1);}
+
+  .legal-layout{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4.5rem);padding-block:clamp(3rem,7vw,5.5rem);}
+  @media(min-width:1024px){.legal-layout{grid-template-columns:260px minmax(0,1fr);}}
+
+  .legal-toc{font-size:.86rem;line-height:1.45;}
+  .legal-toc details{border:1px solid var(--line);background:#FBF8F2;}
+  .legal-toc summary{cursor:pointer;list-style:none;padding:1rem 1.2rem;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--garnet);display:flex;justify-content:space-between;align-items:center;min-height:44px;}
+  .legal-toc summary::-webkit-details-marker{display:none;}
+  .legal-toc summary::after{content:"+";font-size:1.1rem;letter-spacing:0;color:var(--forest);}
+  .legal-toc details[open] summary::after{content:"\2013";}
+  .legal-toc ol{list-style:none;margin:0;padding:0 1.2rem 1rem;}
+  .legal-toc li a{display:block;padding:.45rem 0;color:var(--forest);opacity:.78;border-left:2px solid transparent;padding-left:.7rem;margin-left:-.7rem;}
+  .legal-toc li a:hover,.legal-toc li a.active{opacity:1;border-left-color:var(--terracotta);}
+  @media(min-width:1024px){
+    .legal-toc{position:sticky;top:1.5rem;align-self:start;max-height:calc(100vh - 3rem);overflow-y:auto;}
+    .legal-toc details{border:0;background:transparent;}
+    .legal-toc summary{padding:0 0 1rem;pointer-events:none;}
+    .legal-toc summary::after{display:none;}
+    .legal-toc ol{padding:0;border-left:1px solid var(--line);padding-left:.7rem;}
+  }
+
+  .legal-body{max-width:780px;min-width:0;}
+  .legal-body h2{font-size:clamp(1.45rem,2.6vw,1.9rem);color:var(--forest);margin:3.2rem 0 1.1rem;padding-top:2.2rem;border-top:1px solid var(--line);scroll-margin-top:1.5rem;}
+  .legal-body h2:first-child{margin-top:0;padding-top:0;border-top:0;}
+  .legal-body h3{font-family:var(--sans);font-size:.98rem;font-weight:700;color:var(--garnet);margin:2rem 0 .7rem;letter-spacing:.01em;line-height:1.4;}
+  .legal-body h4{font-family:var(--sans);font-size:.9rem;font-weight:700;color:var(--forest);margin:1.5rem 0 .4rem;}
+  .legal-body p{color:var(--ink);}
+  .legal-body strong{font-weight:700;}
+  .legal-body ul{margin:0 0 1.4em;padding-left:1.25rem;}
+  .legal-body li{margin-bottom:.45em;padding-left:.3rem;}
+  .legal-body li::marker{color:var(--gold);}
+  .legal-body a{color:var(--garnet);text-decoration:underline;text-underline-offset:3px;}
+  .legal-body a:hover{color:var(--terracotta);}
+  .legal-body .caps{background:#FBF8F2;border-left:3px solid var(--gold);padding:1.1rem 1.3rem;font-size:.9rem;letter-spacing:.01em;}
+  .legal-note{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--line);font-size:.86rem;opacity:.8;}
+  .to-top{display:inline-flex;align-items:center;gap:.5rem;margin-top:2rem;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--garnet);min-height:44px;}
+
+</style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar">
+  <em>Paula Knight</em> &mdash; Integrative Health &amp; Functional Medicine Practitioner. <span class="sep">&bull;</span> <em>30,000+ coaching hours.</em> <span class="sep">&bull;</span> From a family that treats living past 90 as unremarkable.
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+  <a href="index.html#method">The Method</a>
+  <a href="index.html#services">Services</a>
+  <a href="index.html#stories">Client Stories</a>
+  <a href="index.html#about">About Paula</a>
+  <a href="index.html#fit">Is this for you?</a>
+  <a class="btn light-solid" href="index.html#assessment">Take the Assessment</a>
+</div>
+
+<!-- ══ HEADER ══ solid nav for inner pages -->
+<header class="site site--solid" id="top">
+  <div class="nav-bar">
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href="index.html" aria-label="Longevity Journey Coaching — home">
+      <img class="brand-logo" src="https://cdn.katalyst-crm.com/a/ecb886f0-28c8-0a25-3fbe-d63d1b0a8116" alt="Longevity Journey Coaching">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#method">The Method</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About Paula</a>
+    </nav>
+    <div class="nav-cta"><a class="btn light" href="index.html#assessment">Take the Assessment</a></div>
+  </div>
+</header>
+
+<!-- ══ LEGAL HERO ══ -->
+<section class="legal-hero">
+  <div class="wrap">
+    <span class="kicker">Legal</span>
+    <h1>Terms of Use and Service Agreement</h1>
+    <p class="legal-meta">PDD INNOVATIONS LLC, d/b/a Longevity Journey Coaching &middot; Effective Date: <strong>October 16, 2026</strong></p>
+    <nav class="legal-switch" aria-label="Legal documents">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html" aria-current="page">Terms of Use</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ══ LEGAL CONTENT ══ -->
+<main class="wrap">
+  <div class="legal-layout">
+    <aside class="legal-toc" aria-label="On this page">
+      <details id="tocDetails">
+        <summary>On this page</summary>
+        <ol>
+          <li><a href="#1-acceptance-of-terms">1. Acceptance of Terms</a></li>
+          <li><a href="#2-description-of-services">2. Description of Services</a></li>
+          <li><a href="#3-eligibility-age-restrictions-and-parental-consent">3. Eligibility, Age Restrictions, and Parental Consent</a></li>
+          <li><a href="#4-user-accounts-registration-and-security">4. User Accounts, Registration, and Security</a></li>
+          <li><a href="#5-comprehensive-educational-and-wellness-disclaimers">5. Comprehensive Educational and Wellness Disclaimers</a></li>
+          <li><a href="#6-intellectual-property-rights-and-protection">6. Intellectual Property Rights and Protection</a></li>
+          <li><a href="#7-user-conduct-prohibited-activities-and-community-standards">7. User Conduct, Prohibited Activities, and Community Standards</a></li>
+          <li><a href="#8-privacy-data-protection-and-international-compliance">8. Privacy, Data Protection, and International Compliance</a></li>
+          <li><a href="#9-payment-terms-billing-and-financial-obligations">9. Payment Terms, Billing, and Financial Obligations</a></li>
+          <li><a href="#10-limitation-of-liability-and-damages">10. Limitation of Liability and Damages</a></li>
+          <li><a href="#11-comprehensive-indemnification">11. Comprehensive Indemnification</a></li>
+          <li><a href="#12-governing-law-and-legal-jurisdiction">12. Governing Law and Legal Jurisdiction</a></li>
+          <li><a href="#13-dispute-resolution-and-arbitration">13. Dispute Resolution and Arbitration</a></li>
+          <li><a href="#14-modifications-updates-and-notice-procedures">14. Modifications, Updates, and Notice Procedures</a></li>
+          <li><a href="#15-termination-and-survival">15. Termination and Survival</a></li>
+          <li><a href="#16-force-majeure-and-business-continuity">16. Force Majeure and Business Continuity</a></li>
+          <li><a href="#17-severability-and-enforceability">17. Severability and Enforceability</a></li>
+          <li><a href="#18-waiver-and-non-waiver">18. Waiver and Non-Waiver</a></li>
+          <li><a href="#19-assignment-and-transfer">19. Assignment and Transfer</a></li>
+          <li><a href="#20-entire-agreement-and-integration">20. Entire Agreement and Integration</a></li>
+          <li><a href="#21-interpretation-and-construction">21. Interpretation and Construction</a></li>
+          <li><a href="#22-electronic-signatures-and-records">22. Electronic Signatures and Records</a></li>
+          <li><a href="#23-contact-information-and-legal-notices">23. Contact Information and Legal Notices</a></li>
+          <li><a href="#24-cookies-policy">24. Cookies Policy</a></li>
+          <li><a href="#25-electronic-communications-and-can-spam-compliance">25. Electronic Communications and CAN-SPAM Compliance</a></li>
+        </ol>
+      </details>
+    </aside>
+    <article class="legal-body">
+<h2 id="1-acceptance-of-terms">1. Acceptance of Terms</h2>
+<p>These Terms of Use and Service Agreement ("Terms," "Agreement") constitute a legally binding contract between you ("User," "you," "your," "Customer," or "Subscriber") and PDD INNOVATIONS LLC, a limited liability company organized under the laws of the State of Wyoming, doing business as Longevity Journey Coaching ("Company," "Longevity Journey," "we," "us," or "our"). By accessing, browsing, downloading, installing, registering for, or using our website located at longevityjourneycoaching.com and any associated subdomains (the "Website"), mobile application (the "App"), online platform, or any of our services, programs, content, products, courses, coaching, events, or materials (collectively, the "Services"), you acknowledge that you have read, understood, and unconditionally agree to be bound by these Terms and our Privacy Policy, which is expressly incorporated herein by reference.</p>
+<p class="caps"><strong>IF YOU DO NOT AGREE TO ALL OF THESE TERMS, YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</strong></p>
+<p>These Terms apply to all visitors, users, customers, subscribers, and others who access or use the Services ("Users"). By using the Services, you represent that you have the legal authority to enter into this Agreement and that you will comply with all applicable laws and regulations.</p>
+<h2 id="2-description-of-services">2. Description of Services</h2>
+<p>Longevity Journey Coaching is a United States limited liability company operating globally in the wellness education industry. We provide comprehensive educational content and wellness resources designed to empower individuals in their wellness journey through:</p>
+<ul>
+<li>Fascial maneuver techniques, methodologies, and proprietary training systems</li>
+<li>Life Reset Programs, coaching services, and personalized wellness consultations</li>
+<li>Educational content, courses, workshops, seminars, and certification programs</li>
+<li>Weekly classes, events, retreats, and community gatherings (in-person and virtual)</li>
+<li>Herbal supplements, wellness products, and therapeutic tools</li>
+<li>Mobile application for wellness tracking, community interaction, and content access</li>
+<li>Digital content including videos, podcasts, guides, e-books, and streaming media</li>
+<li>Community-based foundation services and wellness education initiatives</li>
+<li>Corporate wellness programs and institutional partnerships</li>
+<li>Research and development in fascial therapy and wellness methodologies</li>
+<li>Subscription-based content and premium membership services</li>
+</ul>
+<p>Our mission is to empower individuals through education and self-responsibility, utilizing evidence-based practices including fascial maneuvers to release traumatic memories, reduce stress, and promote comprehensive emotional and physical wellbeing. We are committed to making wellness education accessible and transformative for our global community.</p>
+<h2 id="3-eligibility-age-restrictions-and-parental-consent">3. Eligibility, Age Restrictions, and Parental Consent</h2>
+<h3>3.1 Minimum Age Requirement</h3>
+<p>You must be at least thirteen (13) years of age to use our Services. By using our Services, you represent and warrant that you meet this minimum age requirement and have the legal capacity to enter into this Agreement.</p>
+<h3>3.2 Minors Under 18 - Mandatory Parental Consent</h3>
+<p>If you are under eighteen (18) years of age but at least thirteen (13) years old ("Minor"), you may ONLY use our Services with the prior express written consent and ongoing supervision of your parent or legal guardian ("Parent/Guardian"). Your Parent/Guardian must read, understand, and agree to these Terms on your behalf before you may access or use any of our Services.</p>
+<h3>3.3 Comprehensive Parental Responsibilities</h3>
+<p>For users under 18 years of age, the following requirements apply:</p>
+<ul>
+<li>A Parent/Guardian must create and manage the account, providing valid identification and contact information</li>
+<li>The Parent/Guardian assumes full legal and financial responsibility for all activities under the Minor's account</li>
+<li>The Parent/Guardian must actively supervise the Minor's use of our Services, particularly physical activities</li>
+<li>The Parent/Guardian is liable for any charges, fees, damages, violations, or legal consequences arising from the Minor's use</li>
+<li>We reserve the right to require verification of parental consent through government-issued identification</li>
+<li>Parents/Guardians may revoke consent and request immediate account deletion at any time</li>
+<li>The Parent/Guardian must ensure the Minor's physical and emotional readiness for our wellness programs</li>
+<li>Continuous adult supervision is mandatory during any physical exercises or fascial maneuver activities</li>
+<li>The Parent/Guardian must review and approve all content accessed by the Minor</li>
+<li>Medical clearance from a healthcare professional may be required before participation</li>
+</ul>
+<h3>3.4 Safety Protocols for Minors</h3>
+<p>Given the physical nature of our fascial maneuver techniques and wellness programs, Minors must have qualified adult supervision at all times when participating in any physical activities, exercises, or therapeutic techniques provided through our Services.</p>
+<p>Parents/Guardians acknowledge the inherent risks and assume full responsibility for their Minor's safety.</p>
+<h3>3.5 Verification Rights</h3>
+<p>We reserve the right to verify age and parental consent at any time through various means including but not limited to requesting identification documents, conducting verification calls, or requiring notarized consent forms.</p>
+<h2 id="4-user-accounts-registration-and-security">4. User Accounts, Registration, and Security</h2>
+<h3>4.1 Account Creation</h3>
+<p>To access certain features of our Services, you must create a user account by providing accurate, current, and complete information. You agree to maintain and promptly update your account information to ensure accuracy.</p>
+<h3>4.2 Account Security and Responsibility</h3>
+<p>You are solely responsible for maintaining the confidentiality and security of your account credentials, including username and password. You agree to:</p>
+<ul>
+<li>Use strong, unique passwords and enable two-factor authentication when available</li>
+<li>Immediately notify us of any unauthorized access or security breaches</li>
+<li>Accept full responsibility for all activities occurring under your account</li>
+<li>Not share your account credentials with any third parties</li>
+<li>Log out of your account when using shared or public devices</li>
+<li>Regularly monitor your account for unauthorized activity</li>
+</ul>
+<h3>4.3 Account Suspension and Termination</h3>
+<p>We reserve the absolute right to suspend, restrict, or permanently terminate your account immediately, with or without notice, for any reason including but not limited to:</p>
+<ul>
+<li>Violation of these Terms or any applicable laws</li>
+<li>Fraudulent, abusive, or harmful behavior</li>
+<li>Non-payment of fees or chargebacks</li>
+<li>Providing false or misleading information</li>
+<li>Engaging in activities that harm our reputation or business</li>
+<li>Technical or security concerns</li>
+<li>Inactivity for extended periods</li>
+</ul>
+<h2 id="5-comprehensive-educational-and-wellness-disclaimers">5. Comprehensive Educational and Wellness Disclaimers</h2>
+<h3>5.1 Not Medical Advice - Critical Disclaimer</h3>
+<p class="caps">OUR SERVICES, INCLUDING ALL FASCIAL MANEUVERS, WELLNESS PROGRAMS, EDUCATIONAL CONTENT, HERBAL SUPPLEMENTS, AND ANY OTHER MATERIALS OR TECHNIQUES, ARE STRICTLY FOR INFORMATIONAL, EDUCATIONAL, AND GENERAL WELLNESS PURPOSES ONLY. THEY DO NOT CONSTITUTE MEDICAL ADVICE, DIAGNOSIS, TREATMENT, OR CURE FOR ANY MEDICAL CONDITION OR DISEASE.</p>
+<h3>5.2 Mandatory Healthcare Consultation</h3>
+<p>Before beginning any wellness program, physical activity, herbal supplement regimen, or therapeutic technique provided through our Services, you MUST consult with qualified healthcare professionals, including but not limited to physicians, physiotherapists, or other licensed medical practitioners, especially if you have any preexisting medical conditions, injuries, or concerns.</p>
+<h3>5.3 Assumption of Risk and Release</h3>
+<p>You acknowledge, understand, and voluntarily assume all risks associated with:</p>
+<ul>
+<li>Physical injury, strain, or exacerbation of existing conditions from fascial maneuvers or exercises</li>
+<li>Emotional or psychological responses to trauma release techniques</li>
+<li>Adverse reactions to herbal supplements or wellness products</li>
+<li>Participation in group classes, events, or community activities</li>
+<li>Following guidance or instructions provided through our Services</li>
+<li>Any unforeseen complications or individual reactions to our methodologies</li>
+</ul>
+<h3>5.4 No Medical Supervision</h3>
+<p>You understand that Longevity Journey does not provide medical supervision, and our coaches, instructors, and staff are not licensed medical professionals unless specifically stated otherwise.</p>
+<h3>5.5 Individual Results Disclaimer</h3>
+<p>Results from our Services vary significantly among individuals. We make no guarantees, representations, or warranties regarding specific outcomes, healing, or health improvements. Any testimonials, success stories, or case studies presented on our Services represent individual experiences and are not indicative of future results. In accordance with FTC guidelines, endorsements reflect the honest opinions of the individuals and have not been independently verified by Longevity Journey.</p>
+<h3>5.6 Wellness Claims and Testimonials</h3>
+<p>Any wellness-related claims made through our Services are not intended to diagnose, treat, cure, or prevent any disease. Testimonials displayed on our platform are submitted voluntarily by users and reflect their individual experiences. We do not compensate users for testimonials unless explicitly disclosed alongside the testimonial. In compliance with FTC Endorsement Guides (16 CFR Part 255), any material connections between Longevity Journey and endorsers will be clearly disclosed.</p>
+<h3>5.7 FDA and Herbal Supplement Disclaimer (DSHEA)</h3>
+<p class="caps"><strong>THE HERBAL SUPPLEMENTS AND WELLNESS PRODUCTS SOLD THROUGH OUR SERVICES HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION (FDA). THESE PRODUCTS ARE NOT INTENDED TO DIAGNOSE, TREAT, CURE, OR PREVENT ANY DISEASE. THE STATEMENTS MADE REGARDING THESE PRODUCTS HAVE NOT BEEN EVALUATED BY THE FDA. PLEASE CONSULT YOUR HEALTHCARE PROVIDER BEFORE STARTING ANY HERBAL SUPPLEMENT REGIMEN.</strong></p>
+<p>In accordance with the Dietary Supplement Health and Education Act of 1994 (DSHEA), our herbal supplements are classified as dietary supplements, not drugs. We comply with all FDA labeling requirements, Good Manufacturing Practice (GMP) regulations (21 CFR Part 111), and applicable FTC advertising guidelines for dietary supplements.</p>
+<h3>5.8 AI-Powered Services Disclosure</h3>
+<p>Our Services include an AI-powered chat assistant and other automated features. By using these AI-powered features, you acknowledge and agree that:</p>
+<ul>
+<li>The AI assistant is powered by third-party large language models and is not a substitute for professional medical, legal, or financial advice</li>
+<li>AI-generated responses may not always be accurate, complete, or current, and should be independently verified</li>
+<li>Your conversations with the AI assistant may be stored and used to improve the service, subject to our Privacy Policy</li>
+<li>The AI assistant does not have the ability to make medical diagnoses, prescribe treatments, or provide emergency assistance</li>
+<li>In compliance with the EU AI Act (Article 50) and Colorado AI Act, we disclose that you are interacting with an AI system, not a human</li>
+<li>We implement human oversight and regularly review AI outputs for safety and accuracy</li>
+</ul>
+<p>If you experience a medical emergency, call your local emergency services immediately. Do not rely on AI-generated content for urgent medical or wellness decisions.</p>
+<h2 id="6-intellectual-property-rights-and-protection">6. Intellectual Property Rights and Protection</h2>
+<h3>6.1 Comprehensive Ownership</h3>
+<p>All content, materials, intellectual property, and proprietary information available through our Services, including but not limited to:</p>
+<ul>
+<li>Text, graphics, logos, images, photographs, videos, audio recordings, and multimedia content</li>
+<li>Software, applications, algorithms, and technical systems</li>
+<li>Fascial maneuver techniques, methodologies, and training systems</li>
+<li>Course materials, educational content, and certification programs</li>
+<li>Trademarks, service marks, trade names, and brand identities</li>
+<li>Copyrighted works, publications, and creative expressions</li>
+<li>Trade secrets, proprietary processes, and confidential information</li>
+<li>Database rights and compilation copyrights</li>
+</ul>
+<p>Domain names and website architecture are owned by or licensed to PDD INNOVATIONS LLC (d/b/a Longevity Journey Coaching) and are protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property laws and treaties.</p>
+<h3>6.2 Limited License Grant</h3>
+<p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to access and use our Services solely for personal, non-commercial purposes in accordance with these Terms.</p>
+<h3>6.3 Strict Usage Restrictions</h3>
+<p>You are expressly prohibited from:</p>
+<ul>
+<li>Reproducing, distributing, modifying, or creating derivative works of any content</li>
+<li>Publicly displaying, performing, or commercially exploiting our intellectual property</li>
+<li>Reverse engineering, decompiling, or attempting to extract source code</li>
+<li>Removing, altering, or obscuring any proprietary notices or attributions</li>
+<li>Using our content for training AI systems or machine learning models</li>
+<li>Scraping, harvesting, or systematically collecting our data</li>
+<li>Creating competing services using our methodologies or content</li>
+<li>Sublicensing, selling, or transferring your access rights to third parties</li>
+</ul>
+<h3>6.4 DMCA Compliance</h3>
+<p>We respect intellectual property rights and comply with the Digital Millennium Copyright Act. We will respond to valid takedown notices and may terminate accounts of repeat infringers.</p>
+<h2 id="7-user-conduct-prohibited-activities-and-community-standards">7. User Conduct, Prohibited Activities, and Community Standards</h2>
+<h3>7.1 Acceptable Use</h3>
+<p>You agree to use our Services in a lawful, respectful, and appropriate manner that aligns with our community values and mission.</p>
+<h3>7.2 Prohibited Activities</h3>
+<p>You expressly agree NOT to:</p>
+<ul>
+<li>Use our Services for any unlawful purpose or in violation of applicable laws or regulations</li>
+<li>Impersonate any person, entity, or Longevity Journey representative</li>
+<li>Upload, post, transmit, or share harmful, offensive, defamatory, or inappropriate content</li>
+<li>Engage in harassment, bullying, stalking, or threatening behavior toward other users</li>
+<li>Interfere with, disrupt, or compromise the security of our Services or servers</li>
+<li>Attempt to gain unauthorized access to our systems, accounts, or data</li>
+<li>Use our Services to spam, solicit, or engage in commercial activities without authorization</li>
+<li>Violate any intellectual property rights or proprietary information</li>
+<li>Distribute malware, viruses, or other harmful code</li>
+<li>Engage in fraudulent activities, including payment fraud or identity theft</li>
+<li>Create multiple accounts to circumvent restrictions or bans</li>
+<li>Share graphic, violent, or sexually explicit content</li>
+<li>Promote illegal substances, activities, or services</li>
+<li>Attempt to manipulate or game our systems, algorithms, or community features</li>
+<li>Collect or harvest personal information of other users without consent</li>
+<li>Use automated systems, bots, or scripts to access our Services</li>
+<li>Engage in activities that could harm Longevity Journey's reputation or business interests</li>
+</ul>
+<h3>7.3 Content Monitoring</h3>
+<p>While we are not obligated to monitor user content, we reserve the right to review, moderate, edit, or remove any content at our sole discretion without notice.</p>
+<h3>7.4 Reporting Violations</h3>
+<p>Users are encouraged to report violations of these Terms or inappropriate behavior through our designated reporting mechanisms.</p>
+<h2 id="8-privacy-data-protection-and-international-compliance">8. Privacy, Data Protection, and International Compliance</h2>
+<h3>8.1 Privacy Policy Incorporation</h3>
+<p>Your privacy and data protection are governed by our comprehensive Privacy Policy, which is incorporated into these Terms by reference and forms an integral part of this Agreement.</p>
+<h3>8.2 Global Data Transfers</h3>
+<p>As a United States company operating internationally, we may collect, process, store, and transfer your personal information across international borders, including to and from the United States, Canada, and other countries where we or our service providers operate, in accordance with applicable privacy laws and our Privacy Policy.</p>
+<h3>8.3 Minors' Privacy Protection</h3>
+<p>We implement enhanced privacy protections for users under 18 years of age, including:</p>
+<ul>
+<li>Limited data collection and processing</li>
+<li>Parental access and control over Minor's information</li>
+<li>Restricted sharing and marketing communications</li>
+<li>Enhanced security measures and monitoring</li>
+<li>Compliance with applicable children's privacy laws including COPPA and applicable state privacy laws</li>
+</ul>
+<h3>8.4 Data Retention</h3>
+<p>We retain personal information only as long as necessary for the purposes outlined in our Privacy Policy or as required by applicable law.</p>
+<h2 id="9-payment-terms-billing-and-financial-obligations">9. Payment Terms, Billing, and Financial Obligations</h2>
+<h3>9.1 Fees and Charges</h3>
+<p>Certain Services require payment of fees, charges, or subscriptions. All fees are clearly stated in the applicable currency at the time of purchase and include applicable taxes unless otherwise specified.</p>
+<h3>9.2 Payment Authorization</h3>
+<p>By providing payment information, you authorize us to charge the specified amounts to your designated payment method. You represent that you have the legal right to use the payment method provided.</p>
+<h3>9.3 Subscription Services</h3>
+<p>For recurring subscription services:</p>
+<ul>
+<li>Fees are charged automatically on the specified billing cycle until cancelled</li>
+<li>You are responsible for cancelling subscriptions before the next billing cycle</li>
+<li>Cancellation does not entitle you to refunds for previously charged periods</li>
+<li>We may change subscription fees with advance notice as permitted by law</li>
+<li>Failed payments may result in service suspension or termination</li>
+</ul>
+<h3>9.4 Refund Policy</h3>
+<p>Unless otherwise specified in writing or required by applicable law, all fees are nonrefundable. We may, at our sole discretion, provide refunds or credits on a case-by-case basis.</p>
+<h3>9.5 Payment Disputes</h3>
+<p>Any payment disputes must be reported within 30 days of the charge. We reserve the right to suspend services during dispute resolution.</p>
+<h3>9.6 Third-Party Payment Processors</h3>
+<p>Payments are processed by third-party payment processors. You agree to comply with their terms and conditions, and we are not responsible for their actions or failures.</p>
+<h3>9.7 Membership</h3>
+<p>Longevity Journey offers a subscription membership program known as "Fascia Coffee Break". By subscribing to it, you agree to the following additional terms:</p>
+<h3>9.8.1 Subscription and Billing</h3>
+<ul>
+<li>Fascia Coffee Break is a recurring subscription service billed on a monthly or annual basis, as selected at the time of purchase</li>
+<li>Your subscription automatically renews at the end of each billing period unless cancelled before the renewal date</li>
+<li>Subscription fees are charged to your designated payment method on file at the start of each billing cycle</li>
+<li>We reserve the right to adjust Fascia Coffee Break pricing with at least thirty (30) days' advance notice; continued use after a price change constitutes acceptance</li>
+</ul>
+<h3>9.8.2 Cancellation and Refunds</h3>
+<ul>
+<li>You may cancel your subscription at any time through your account settings or by contacting support</li>
+<li>Upon cancellation, you retain access to subscription benefits until the end of your current paid billing period</li>
+<li>No partial refunds are provided for unused portions of a billing period unless required by applicable law</li>
+<li>If you cancel and later re-subscribe, your access to previously completed program progress will be restored where available</li>
+</ul>
+<h3>9.8.3 Account Sharing and Transferability</h3>
+<p>Fascia Coffee Break memberships are personal and non-transferable. Your subscription is tied to a single user account and may not be shared with, transferred to, or used by other individuals. Violation of this provision may result in immediate termination of your membership without refund.</p>
+<h3>9.8.4 Modification or Discontinuation</h3>
+<p>We reserve the right to modify, suspend, or discontinue the Fascia Coffee Break membership program or any of its benefits at any time. In the event of a discontinuation, active subscribers will receive a prorated refund for the unused portion of their current billing period.</p>
+<h3>9.9 Automatic Renewal Disclosures (ROSCA / California ARL)</h3>
+<p>AUTOMATIC RENEWAL TERMS: Your subscription will automatically renew at the end of each billing period at the then-current rate unless you cancel before the renewal date. You will be charged the applicable subscription fee using the payment method on file.</p>
+<p>In compliance with the Restore Online Shoppers' Confidence Act (ROSCA), California Automatic Renewal Law (Cal. Bus. &amp; Prof. Code §§ 17600-17606), and similar state laws:</p>
+<ul>
+<li>Before you are charged for any recurring subscription, we clearly and conspicuously present the automatic renewal terms, cancellation policy, and recurring charges</li>
+<li>We obtain your affirmative consent before charging your payment method for any automatically renewing subscription</li>
+<li>We provide a confirmation of your subscription via email, including the automatic renewal terms and cancellation instructions</li>
+<li>We provide a simple, cost-effective mechanism to cancel your subscription at any time by contacting <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a></li>
+<li>If we change the terms of your subscription (including price increases), we will provide you with clear notice and an opportunity to cancel before the changes take effect</li>
+<li>You may cancel at any time, and cancellation will be effective at the end of your current billing period. No further charges will be applied after cancellation</li>
+</ul>
+<h2 id="10-limitation-of-liability-and-damages">10. Limitation of Liability and Damages</h2>
+<p class="caps"><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, PDD INNOVATIONS LLC (D/B/A LONGEVITY JOURNEY COACHING), ITS SUBSIDIARIES, AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, CONTRACTORS, LICENSORS, SERVICE PROVIDERS, AND REPRESENTATIVES (COLLECTIVELY, "LONGEVITY JOURNEY PARTIES") SHALL NOT BE LIABLE FOR ANY:</strong></p>
+<ul>
+<li><strong>INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES</strong></li>
+<li><strong>LOSS OF PROFITS, REVENUE, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES</strong></li>
+<li><strong>DAMAGES RESULTING FROM YOUR USE OR INABILITY TO USE THE SERVICES</strong></li>
+<li><strong>DAMAGES RESULTING FROM ANY UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR DATA</strong></li>
+<li><strong>DAMAGES RESULTING FROM ANY CONDUCT OR CONTENT OF THIRD PARTIES</strong></li>
+<li><strong>DAMAGES RELATED TO HEALTH OUTCOMES, INJURIES, OR MEDICAL CONDITIONS</strong></li>
+<li><strong>DAMAGES FROM INTERRUPTIONS, ERRORS, OR TECHNICAL FAILURES</strong></li>
+<li><strong>DAMAGES FROM RELIANCE ON INFORMATION PROVIDED THROUGH THE SERVICES</strong></li>
+</ul>
+<p class="caps">WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT LONGEVITY JOURNEY HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p class="caps"><strong>IN NO EVENT SHALL THE TOTAL LIABILITY OF LONGEVITY JOURNEY PARTIES TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION EXCEED THE AMOUNT YOU HAVE PAID TO LONGEVITY JOURNEY IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR ONE HUNDRED DOLLARS ($100 USD), WHICHEVER IS GREATER.</strong></p>
+<p class="caps"><strong>NOTHING IN THIS SECTION SHALL LIMIT LIABILITY FOR: (A) DEATH OR PERSONAL INJURY CAUSED BY NEGLIGENCE; (B) FRAUD OR FRAUDULENT MISREPRESENTATION; (C) GROSS NEGLIGENCE OR WILLFUL MISCONDUCT; OR (D) ANY OTHER LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU IN FULL. IN SUCH JURISDICTIONS, OUR LIABILITY IS LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.</strong></p>
+<h2 id="11-comprehensive-indemnification">11. Comprehensive Indemnification</h2>
+<p>You agree to indemnify, defend, and hold harmless PDD INNOVATIONS LLC (d/b/a Longevity Journey Coaching) and all Longevity Journey Parties from and against any and all claims, demands, actions, suits, proceedings, investigations, liabilities, damages, losses, costs, expenses (including reasonable attorneys' fees and court costs), fines, penalties, and settlements arising out of or relating to:</p>
+<ul>
+<li>Your use or misuse of the Services</li>
+<li>Your violation of these Terms or any applicable laws</li>
+<li>Your violation of any rights of another party, including intellectual property rights</li>
+<li>Any content you submit, post, or transmit through the Services</li>
+<li>Any injuries, damages, or harm resulting from your participation in our programs</li>
+<li>Any false or misleading information you provide</li>
+<li>Your breach of any representations or warranties made herein</li>
+<li>Any negligent or wrongful acts or omissions by you or anyone acting on your behalf</li>
+</ul>
+<p>This indemnification obligation will survive termination of these Terms and your use of the Services.</p>
+<h2 id="12-governing-law-and-legal-jurisdiction">12. Governing Law and Legal Jurisdiction</h2>
+<h3>12.1 Governing Law</h3>
+<p>These Terms and any disputes arising hereunder shall be governed by and construed in accordance with the laws of the State of Wyoming, United States, without regard to conflict of law principles.</p>
+<h3>12.2 Exclusive Jurisdiction</h3>
+<p>You irrevocably agree that the state and federal courts located in the State of Wyoming, United States, shall have exclusive jurisdiction over any disputes, claims, or controversies arising out of or relating to these Terms or your use of the Services.</p>
+<h3>12.3 International Users</h3>
+<p>Users accessing our Services from outside the United States acknowledge and agree that:</p>
+<ul>
+<li>They are subject to United States and Wyoming state law regarding their use of our Services</li>
+<li>They consent to the jurisdiction of Wyoming courts</li>
+<li>They are responsible for compliance with their local laws</li>
+<li>Currency conversions and international transaction fees may apply</li>
+<li>Service availability may vary by jurisdiction</li>
+</ul>
+<h3>12.4 Waiver of Jury Trial</h3>
+<p class="caps"><strong>TO THE EXTENT PERMITTED BY LAW, YOU WAIVE ANY RIGHT TO TRIAL BY JURY IN ANY PROCEEDING ARISING OUT OF OR RELATED TO THESE TERMS.</strong></p>
+<h2 id="13-dispute-resolution-and-arbitration">13. Dispute Resolution and Arbitration</h2>
+<h3>13.1 Mandatory Informal Resolution</h3>
+<p>Before initiating any formal legal proceedings, you agree to first attempt to resolve any dispute through good faith negotiations by contacting our legal department in writing with a detailed description of the dispute.</p>
+<h3>13.2 Binding Arbitration</h3>
+<p>If informal resolution fails within sixty (60) days, any dispute shall be resolved through final and binding arbitration administered by the American Arbitration Association (AAA) in accordance with their Commercial Arbitration Rules.</p>
+<h3>13.3 Arbitration Procedures</h3>
+<ul>
+<li>Arbitration shall be conducted in Sheridan, Wyoming, United States</li>
+<li>The arbitration shall be conducted in English</li>
+<li>Each party shall bear their own costs and attorneys' fees</li>
+<li>The arbitrator's decision shall be final and binding</li>
+<li>Judgment may be entered on the arbitral award in any court of competent jurisdiction</li>
+</ul>
+<h3>13.4 Class Action Waiver</h3>
+<p class="caps">YOU AGREE THAT ANY ARBITRATION OR PROCEEDING SHALL BE LIMITED TO THE DISPUTE BETWEEN YOU AND LONGEVITY JOURNEY INDIVIDUALLY. YOU WAIVE ANY RIGHT TO PARTICIPATE IN CLASS ACTIONS, COLLECTIVE ACTIONS, OR REPRESENTATIVE PROCEEDINGS.</p>
+<h3>13.5 Arbitration Opt-Out Right</h3>
+<p>You have the right to opt out of the binding arbitration and class action waiver provisions of this Section 13 by sending written notice of your decision to opt out to <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a> within thirty (30) days of first accepting these Terms. Your notice must include your full name, email address associated with your account, and a clear statement that you wish to opt out of arbitration. If you opt out, you may pursue claims in court, but all other provisions of these Terms remain in effect.</p>
+<h3>13.6 Small Claims Exception</h3>
+<p>Notwithstanding the above, either party may bring an individual action in small claims court for disputes within the jurisdictional limits of that court. Additionally, nothing in this Section shall prevent either party from seeking injunctive or equitable relief in a court of competent jurisdiction for claims related to intellectual property infringement, unauthorized access, or violations of confidentiality obligations.</p>
+<h3>13.7 Arbitration Fees and Costs</h3>
+<p>If you initiate arbitration, Longevity Journey will pay all AAA filing fees and arbitrator costs beyond the first $200 (which you are responsible for), provided that your claim is not found to be frivolous. If the arbitrator finds that the substance of your claim or the relief sought is frivolous or brought for an improper purpose (as measured by the standards of Federal Rule of Civil Procedure 11(b)), then the payment of fees shall be governed by the AAA Rules. Each party bears the cost of their own attorneys' fees unless the arbitrator awards fees to the prevailing party as permitted by applicable law.</p>
+<h3>13.8 Mass Arbitration</h3>
+<ul>
+<li>If twenty-five (25) or more similar arbitration demands are filed against Longevity Journey within a sixty (60) day period, the parties agree to follow the AAA's Supplementary</li>
+</ul>
+<p>Rules for Multiple Case Filings (or any successor protocol). The parties will cooperate in good faith to select a process arbitrator to establish bellwether proceedings. No more than ten (10) bellwether cases shall proceed at a time, and remaining cases shall be stayed pending resolution of the bellwether proceedings.</p>
+<h3>13.9 Exceptions to Arbitration</h3>
+<p>This arbitration agreement does not preclude you from bringing issues to the attention of federal, state, or local agencies, including the Federal Trade Commission, the Consumer Financial Protection Bureau, or your state attorney general. Such agencies may seek relief against us on your behalf. Nothing in these Terms limits your right to participate in a government investigation or to bring claims that cannot legally be subject to mandatory arbitration under applicable law.</p>
+<h2 id="14-modifications-updates-and-notice-procedures">14. Modifications, Updates, and Notice Procedures</h2>
+<h3>14.1 Right to Modify</h3>
+<p>We reserve the right to modify, update, or revise these Terms at any time in our sole discretion. Material changes will be communicated through:</p>
+<ul>
+<li>Posting updated Terms on our Website with a new effective date</li>
+<li>Email notification to registered users</li>
+<li>In-app notifications or announcements</li>
+<li>Prominent notices on our platform</li>
+</ul>
+<h3>14.2 Acceptance of Modifications</h3>
+<p>Your continued use of our Services after the effective date of any modifications constitutes your acceptance of the updated Terms. If you do not agree to the modifications, you must discontinue use of the Services.</p>
+<h3>14.3 Notice to Users</h3>
+<p>All notices, communications, and updates from Longevity Journey will be delivered through the contact information you provide in your account or through our platform notifications.</p>
+<h2 id="15-termination-and-survival">15. Termination and Survival</h2>
+<h3>15.1 Termination by User</h3>
+<p>You may terminate your account and discontinue use of our Services at any time by following the account closure procedures outlined in your account settings or by contacting customer support.</p>
+<h3>15.2 Termination by Longevity Journey Coaching</h3>
+<p>We may terminate, suspend, or restrict your access to our Services immediately, with or without notice, for any reason including but not limited to breach of these Terms, violation of law, or protection of our interests.</p>
+<h3>15.3 Effect of Termination</h3>
+<p>Upon termination:</p>
+<ul>
+<li>Your right to access and use the Services will cease immediately</li>
+<li>We may delete your account and associated data</li>
+<li>You remain liable for all charges incurred prior to termination</li>
+<li>Certain provisions of these Terms will survive termination</li>
+<li>We may retain certain information as required by law or for legitimate business purposes</li>
+</ul>
+<h3>15.4 Survival</h3>
+<p>The following provisions shall survive termination: intellectual property rights, indemnification, limitation of liability, governing law, dispute resolution, and any other provisions that by their nature should survive.</p>
+<h2 id="16-force-majeure-and-business-continuity">16. Force Majeure and Business Continuity</h2>
+<p>Longevity Journey shall not be liable for any failure or delay in performance under these Terms due to circumstances beyond our reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, government actions, pandemics, labor disputes, or technical failures. We will make reasonable efforts to minimize the impact of such events on our Services.</p>
+<h2 id="17-severability-and-enforceability">17. Severability and Enforceability</h2>
+<p>If any provision of these Terms is found to be unenforceable, invalid, or illegal by a court of competent jurisdiction, such provision will be limited or eliminated to the minimum extent necessary so that these Terms will otherwise remain in full force and effect and enforceable. The remaining provisions will continue to be valid and enforceable to the fullest extent permitted by law.</p>
+<h2 id="18-waiver-and-non-waiver">18. Waiver and Non-Waiver</h2>
+<p>No waiver of any term or condition of these Terms shall be deemed a further or continuing waiver of such term or condition or any other term or condition. Longevity Journey's failure to assert any right or provision under these Terms shall not constitute a waiver of such right or provision.</p>
+<h2 id="19-assignment-and-transfer">19. Assignment and Transfer</h2>
+<p>You may not assign, transfer, or delegate any of your rights or obligations under these Terms without our prior written consent. Longevity Journey may freely assign or transfer these Terms and our rights and obligations hereunder to any third party without restriction, including in connection with a merger, acquisition, or sale of assets.</p>
+<h2 id="20-entire-agreement-and-integration">20. Entire Agreement and Integration</h2>
+<p>These Terms, together with our Privacy Policy and any additional terms applicable to specific Services, constitute the entire agreement between you and PDD INNOVATIONS LLC (d/b/a Longevity Journey Coaching) regarding your use of our Services and supersede all prior agreements, understandings, negotiations, and discussions, whether oral or written, between the parties.</p>
+<h2 id="21-interpretation-and-construction">21. Interpretation and Construction</h2>
+<p>These Terms shall be interpreted and construed in accordance with their plain meaning and without regard to any presumption or rule requiring construction against the party causing such instrument to be drafted. Headings are for convenience only and do not affect interpretation.</p>
+<h2 id="22-electronic-signatures-and-records">22. Electronic Signatures and Records</h2>
+<p>You consent to the use of electronic signatures, contracts, orders, and other records, and to electronic delivery of notices, policies, and records of transactions initiated or completed through the Services. Electronic records will have the same legal effect as physical documents.</p>
+<h2 id="23-contact-information-and-legal-notices">23. Contact Information and Legal Notices</h2>
+<p>For questions, concerns, or legal notices regarding these Terms, please contact us at:</p>
+<ul>
+<li>PDD INNOVATIONS LLC d/b/a Longevity Journey Coaching</li>
+<li>Legal Department</li>
+<li><strong>Address:</strong> 30 N Gould St, Ste R, Sheridan, WY 82801</li>
+<li><strong>Website:</strong> <a href="https://longevityjourneycoaching.com">https://longevityjourneycoaching.com</a></li>
+<li><strong>Email:</strong> <a href="mailto:support@longevityjourneycoaching.com">support@longevityjourneycoaching.com</a></li>
+</ul>
+<p>All legal notices must be in writing and will be deemed given when delivered personally, sent by certified mail, or sent by email to the addresses specified above.</p>
+<h2 id="24-cookies-policy">24. Cookies Policy</h2>
+<p>Our Services use cookies and similar tracking technologies to enhance your experience, analyze usage, and assist in our marketing efforts. This section outlines how we use these technologies.</p>
+<h3>24.1 What Are Cookies</h3>
+<p>Cookies are small text files stored on your device when you visit a website. They help the site remember your preferences, login status, and other information to improve your experience. We also use similar technologies such as web beacons, pixel tags, and local storage.</p>
+<h3>24.2 Types of Cookies We Use</h3>
+<h4>Strictly Necessary Cookies</h4>
+<p>Required for the operation of our Services. These include cookies that enable you to log in, maintain your session, and use essential features. These cookies cannot be disabled.</p>
+<h4>Performance &amp; Analytics Cookies</h4>
+<p>Help us understand how visitors interact with our Services by collecting information about pages visited, time spent, and errors encountered. We use third-party analytics services to gather this data.</p>
+<h4>Functional Cookies</h4>
+<p>Enable enhanced functionality and personalization, such as remembering your preferences, language settings, and display options.</p>
+<h4>Marketing &amp; Advertising Cookies</h4>
+<p>Used to deliver relevant advertisements, track ad campaign performance, and limit the number of times you see an ad. These may be set by our advertising partners including Meta, Google Ads, and similar platforms.</p>
+<h3>24.3 Third-Party Cookies</h3>
+<p>Some cookies are placed by third-party services that appear on our pages. We do not control these cookies. Third parties that may set cookies through our Services include payment processors, analytics services, social media platforms, and advertising networks.</p>
+<h3>24.4 Managing Your Cookie Preferences</h3>
+<p>You can manage your cookie preferences through the following methods:</p>
+<ul>
+<li><strong>Browser Settings:</strong> Most browsers allow you to block or delete cookies through their settings menus</li>
+<li><strong>Account Privacy Settings:</strong> Logged-in users can manage cookie preferences through their account privacy settings</li>
+<li><strong>Opt-Out Links:</strong> Use your analytics provider's opt-out tool or manage preferences through your browser settings</li>
+<li><strong>Do Not Track:</strong> We honor Do Not Track (DNT) browser signals where technically feasible</li>
+</ul>
+<p>Please note that disabling certain cookies may affect the functionality of our Services and limit your ability to use certain features.</p>
+<h3>24.5 Cookie Retention</h3>
+<p>Cookies are retained for varying periods depending on their purpose:</p>
+<ul>
+<li><strong>Session Cookies:</strong> Deleted when you close your browser</li>
+<li><strong>Persistent Cookies:</strong> Remain on your device for a set period (typically 30 days to 2 years) or until manually deleted</li>
+<li><strong>Authentication Cookies:</strong> Retained for the duration of your login session or up to 30 days for "remember me" functionality</li>
+</ul>
+<h2 id="25-electronic-communications-and-can-spam-compliance">25. Electronic Communications and CAN-SPAM Compliance</h2>
+<p>In compliance with the CAN-SPAM Act (15 U.S.C. § 7701 et seq.) and Canada's Anti-Spam Legislation (CASL), we commit to the following:</p>
+<ul>
+<li>All commercial electronic messages will accurately identify Longevity Journey as the sender</li>
+<li>Subject lines will accurately reflect the content of the message</li>
+<li>Every commercial email will include a clear and conspicuous opt-out mechanism</li>
+<li>Opt-out requests will be honored within ten (10) business days</li>
+<li>We will not use deceptive subject lines or false header information</li>
+<li>Our physical mailing address is included in all commercial communications: 30 N Gould St, Ste R, Sheridan, WY 82801</li>
+<li><strong>For Canadian recipients:</strong> we will obtain express or implied consent before sending commercial electronic messages, as required by CASL</li>
+<li>Transactional or relationship messages (such as order confirmations, security alerts, and account notifications) are not subject to opt-out requirements but will still identify Longevity Journey Coaching as the sender</li>
+</ul>
+<p>© 2026 Longevity Journey Coaching. All Rights Reserved.</p>
+<p>This document contains confidential and proprietary information.</p>
+<p class="caps"><strong>BY USING OUR SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS.</strong></p>
+
+      <a class="to-top" href="#top">&uarr; Back to top</a>
+    </article>
+  </div>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="wrap">
+    <a class="foot-mark" href="index.html" aria-label="Longevity Journey Coaching — home">
+      <img class="foot-logo" src="https://cdn.katalyst-crm.com/a/ecb886f0-28c8-0a25-3fbe-d63d1b0a8116" alt="Longevity Journey Coaching">
+    </a>
+    <p class="foot-tag">Longevity coaching for the mind, body, and biology &mdash; worldwide, online.</p>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="index.html#method">The Method</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About Paula</a>
+        <a href="index.html#stories">Client Stories</a>
+      </div>
+      <div class="foot-col">
+        <h4>Start Here</h4>
+        <a href="longevity-assessment.html">Take the Longevity Assessment</a>
+        <a href="index.html#services">Book an initial coaching call &mdash; $129</a>
+        <span>Coffee Break Club &mdash; Mon&ndash;Fri, live on Zoom</span>
+      </div>
+      <div class="foot-col">
+        <h4>Visit</h4>
+        <span>30 North Gould Street, Ste R</span>
+        <span>Sheridan, WY 82801, US</span>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <a href="https://www.instagram.com/longevity.journey.coaching" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@longevityjourneycoaching" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.tiktok.com/@longevityjourneyc" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/Longevity-Journey-Coaching" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/in/paula-knight-longevity-journey-coaching" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/longevityjourne" target="_blank" rel="noopener">X (Twitter)</a>
+        <a href="https://www.reddit.com/user/longevityjourney" target="_blank" rel="noopener">Reddit</a>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <div><a href="privacy-policy.html">Privacy Policy</a>&middot;<a href="terms-of-service.html">Terms</a></div>
+      <div>&copy; 2026 Longevity Journey Coaching. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var burger = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  var closeBtn = document.getElementById('mobileMenuClose');
+  function setOpen(open){
+    menu.classList.toggle('open', open);
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.body.classList.toggle('menu-open', open);
+  }
+  burger.addEventListener('click', function(){ setOpen(!menu.classList.contains('open')); });
+  if(closeBtn) closeBtn.addEventListener('click', function(){ setOpen(false); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setOpen(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+  menu.addEventListener('click', function(e){ if(e.target === menu) setOpen(false); });
+  window.addEventListener('resize', function(){ if(window.innerWidth >= 1024) setOpen(false); });
+})();
+</script>
+<script>
+(function(){
+  // collapse TOC on small screens; highlight current section
+  var d = document.getElementById('tocDetails');
+  if (d && window.innerWidth >= 1024) d.setAttribute("open", "");
+  var links = document.querySelectorAll('.legal-toc a');
+  if (d) links.forEach(function(a){ a.addEventListener('click', function(){ if (window.innerWidth < 1024) d.removeAttribute('open'); }); });
+  if (!('IntersectionObserver' in window)) return;
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        links.forEach(function(l){ l.classList.remove('active'); });
+        var a = map[e.target.id]; if (a) a.classList.add('active');
+      }
+    });
+  }, { rootMargin: '0px 0px -75% 0px' });
+  document.querySelectorAll('.legal-body h2[id]').forEach(function(h){ obs.observe(h); });
+})();
+</script>
+</body>
+</html>
